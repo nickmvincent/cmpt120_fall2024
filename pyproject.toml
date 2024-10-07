@@ -1,0 +1,10 @@
+[project]
+name = "cmpt120-fall2024"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "pyyaml>=6.0.2",
+]

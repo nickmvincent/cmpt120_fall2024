@@ -37,7 +37,8 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
+layout: image-right
+image: https://cover.sli.dev
 ---
 
 ## Thursday Announcements, etc.
@@ -51,7 +52,8 @@ A few things to discuss before jumping back into slides
 - Exam schedule
 
 ---
-transition: fade-out
+layout: image-right
+image: https://cover.sli.dev
 ---
 
 # Table of contents
@@ -59,13 +61,6 @@ transition: fade-out
 
 <Toc v-click minDepth="1" maxDepth="2"></Toc>
 
----
-layout: image-right
-image: https://cover.sli.dev
----
-
----
-transition: fade-out
 ---
 
 ## Ok, back to content
@@ -85,6 +80,7 @@ with open("example.csv", "r") as file:
           nice_output += column + " | "
         print(nice_output)
 ```
+
 ---
 
 ## Generating data (advanced)
@@ -126,7 +122,7 @@ parties = ["very left wing", "left wing", "right wing", "very right wing"]
 
 diets = ["plant-heavy", "meat-heavy", "fruit-heavy", "balanced", "dairy-heavy"]
 
-# Generate 50 records
+#Generate 50 records
 records = [["name", "favorite_movie", "second_favorite_movie", "preferred_political_party", "ideal_diet"]]
 for _ in range(50):
     name = random.choice(names)
@@ -155,7 +151,7 @@ for row in records[:3]:
 
 ## Check that you can read it
 
-```python
+```python {all|1|2|3|4|5}
 with open("fake_data.csv", "r") as file:
     header = file.readline()   
     print(header)
@@ -180,7 +176,7 @@ Our initial definition: "common interests counter"
 
 In CS and math, there are many ways we can see how "similar" or "close" two items are
 
-- (cosine distance, manhattan distance, etc.)
+- Cosine similarity, manhattan distance, etc.
 - So we need to specify a definition and algorithm
 
 ---
@@ -198,34 +194,37 @@ To recommend a movie to someone, we take the following approach:
 ## Our algorithm
 
 ### Initalize
-- Set variables to hold all the things we need (i.e., get our buckets ready)
+- Set variables to hold all the things we need (i.e., "get our buckets" ready)
 
 ### Loop
 - Run through every record and process it
 
-## Initialize
+---
+
+## Initialize, more specifically...
 - Pick the user we'll give a recommendation to
 - Define a variable to hold similarity score (starts at zero)
 - Define a variable to keep track of which person is most similar
 - Define a variable to keep track of what what we'll recommend
 
 --- 
-## Loop
+
+## Loop, more specifically...
 
 ### For each person other than our chosen one
 - Compare the two people
-- Check if favorite movie is the same. if so, add one similarity score
-- Check if preferred political party is the same.  if so, add one similarity score
-- Check if ideal diet is the same. if so, add one similarity score
+- Check if favorite movie is the same. if so, add one similarity point
+- Check if preferred political party is the same.  if so, add one similarity point
+- Check if ideal diet is the same. if so, add one similarity point
 - If similarity score is higher than the current top score, update top score/recommendation
 
 Note: we'll have to use our list/string indexing carefully!
 
 ---
+
 ## Our pseudo code
 
-```python
-
+```python {all|1|2|4|5|6|7|8|all}
 # select a user (who will receive recommendation)
 # init variables to hold top similarity score, top person, recommendation
 
@@ -243,9 +242,10 @@ Note: we'll have to use our list/string indexing carefully!
 ```
 
 ---
+
 ## Initialize
 
-```python
+```python {all|1|2|3|4|5}
 # select a user + init variables to keep track of scores
 index_of_user = 17
 top_score = 0
@@ -269,17 +269,13 @@ recommendation = ""
 
 ## Load data
 
-```python
-#| echo: true
+```python {all|6|7|8}
 # select a user + init variables to keep track of scores
 index_of_user = 17
 top_score = 0
 top_record = ""
 recommendation = ""
-
-# load data
 with open("fake_data.csv", "r") as file:
-    # Skip header
     header = file.readline()
     print(header)
     # use a loop to go through all other record lines (one record = one user)
@@ -297,33 +293,24 @@ with open("fake_data.csv", "r") as file:
 ---
 
 ## First for loop
-```python
-#| echo: true
-# select a user + init variables to keep track of scores
+```python {all|6|7|8|9}
 index_of_user = 17
 top_score = 0
 top_record = ""
 recommendation = ""
-
-# load data
 with open("fake_data.csv", "r") as file:
-    # Skip header
     all_lines = file.readlines()
     header = all_lines[0]
     records = all_lines[1:]
-
     user_record = records[index_of_user]
-
     # use a loop to go through all other record lines (one record = one user)
     for record in records:
         if record == user_record:
             continue
-
         # split each record line into a list of items
         columns = record.strip().split(",")
         print(columns)
         # use a nested loop to go through each item
-
 ```
 
 ---
@@ -354,6 +341,11 @@ with open("fake_data.csv", "r") as file:
     user_record = records[index_of_user].strip().split(",")
 
     # use a loop to go through all other record lines (one record = one user)
+```
+
+---
+
+```python
     for record in records:
         columns = record.strip().split(",")
 
@@ -375,7 +367,11 @@ with open("fake_data.csv", "r") as file:
             top_score = score_for_current_record
             top_record = record
             recommendation = columns[2]
+```
 
+---
+
+```python
 print("You are", user_record)
 
 print("After careful consideration, we have found that the most similar user is")
@@ -384,3 +380,7 @@ print(f"You have a similarity score of {top_score}")
 
 print("We recommend you watch", recommendation)
 ```
+
+---
+
+(Switch over to VS Code and show what this looks like as a single file)

@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="Prof.&nbsp;Nick Vincent">
-  <meta name="dcterms.date" content="2023-10-07">
+  <meta name="dcterms.date" content="2024-10-07">
   <title>CMPT 120 Lecture 6-1</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -407,7 +407,7 @@ Prof.&nbsp;Nick Vincent
     </div>
 </div>
 
-  <p class="date">2023-10-07</p>
+  <p class="date">2024-10-07</p>
 </section>
 <section id="agenda" class="slide level2">
 <h2>6-1 agenda</h2>
@@ -426,7 +426,7 @@ Prof.&nbsp;Nick Vincent
 <section id="question-6-1" class="slide level2">
 <h2>Question 6-1</h2>
 <p>What does this snippet output?</p>
-<div id="5629a47a" class="cell" data-execution_count="1">
+<div id="6ab406c9" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a>response <span class="op">=</span> <span class="st">"I LOVE RAIN!!"</span></span>
 <span id="cb1-2"><a href=""></a>words <span class="op">=</span> response.lower().strip(<span class="st">"!"</span>).split(<span class="st">" "</span>)</span>
 <span id="cb1-3"><a href=""></a><span class="cf">if</span> <span class="st">"rain"</span> <span class="kw">in</span> words <span class="kw">or</span> <span class="st">"umbrella"</span> <span class="kw">in</span> words:</span>
@@ -440,7 +440,7 @@ Prof.&nbsp;Nick Vincent
 </div>
 </div></section><section id="question-6-2" class="slide level2">
 <h2>Question 6-2</h2>
-<div id="154a4d28" class="cell" data-execution_count="2">
+<div id="76eca07d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a>response <span class="op">=</span> <span class="st">"I LOVE RAIN!!"</span></span>
 <span id="cb3-2"><a href=""></a><span class="cf">try</span>:</span>
 <span id="cb3-3"><a href=""></a>    words <span class="op">=</span> response.lower().split(<span class="st">" "</span>).strip(<span class="st">"!"</span>)</span>
@@ -458,7 +458,7 @@ Prof.&nbsp;Nick Vincent
 </div></section><section id="question-6-3" class="slide level2">
 <h2>Question 6-3</h2>
 <p>What does this output?</p>
-<div id="c21713cd" class="cell" data-execution_count="3">
+<div id="3993d20d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a>fruits <span class="op">=</span> <span class="st">"durian, rambutan, lychee"</span></span>
 <span id="cb5-2"><a href=""></a>fruit_list <span class="op">=</span> fruits.split(<span class="st">","</span>)</span>
 <span id="cb5-3"><a href=""></a><span class="bu">print</span>(<span class="st">"durian"</span> <span class="kw">in</span> fruit_list)</span>
@@ -474,7 +474,7 @@ False</code></pre>
 </div></section><section id="question-6-4" class="slide level2">
 <h2>Question 6-4</h2>
 <p>What does this output?</p>
-<div id="064d8f7c" class="cell" data-execution_count="4">
+<div id="48bb1a6e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a>fruits <span class="op">=</span> <span class="st">"durian,rambutan,lychee"</span>.split(<span class="st">","</span>)</span>
 <span id="cb7-2"><a href=""></a><span class="bu">print</span>(fruits[<span class="dv">1</span>][<span class="dv">0</span>].upper())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -500,7 +500,7 @@ False</code></pre>
 <section id="question-6-6" class="slide level2">
 <h2>Question 6-6</h2>
 <p>What does this snippet output?</p>
-<div id="f3e1e801" class="cell" data-execution_count="5">
+<div id="56150fb3" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-stdout">
 <pre><code>6
 ['b', 'c']
@@ -517,7 +517,7 @@ f
 <section id="question-6-6-1" class="slide level2">
 <h2>Question 6-6</h2>
 <p>What does this snippet output?</p>
-<div id="efe13374" class="cell" data-execution_count="6">
+<div id="47c62da8" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href=""></a><span class="co">#           0    1    2    3    4    5</span></span>
 <span id="cb12-2"><a href=""></a>letters <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>]</span>
 <span id="cb12-3"><a href=""></a><span class="bu">print</span>(<span class="bu">len</span>(letters))</span>
@@ -552,13 +552,13 @@ f
 <p>We will use a new function: <code>.replace()</code></p>
 <p><code>.replace()</code> takes two arguments and outputs a new string. In the new string, the first argument will be be replaced with the second, e.g.</p>
 <p>“123”.replace(“3”, “4”) -&gt; “124”</p>
-<div id="20f00525" class="cell" data-execution_count="7">
+<div id="5dbdf60c" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href=""></a>text <span class="op">=</span> <span class="st">"csv,files,are;fun!aren't they"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<div id="8710ad9a" class="cell" data-execution_count="8">
+<div id="e97993b3" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href=""></a>text <span class="op">=</span> <span class="st">"csv,files,are;fun!aren't they"</span></span>
 <span id="cb15-2"><a href=""></a>text.replace(</span>
 <span id="cb15-3"><a href=""></a>    <span class="st">";"</span>, <span class="st">","</span>).replace(<span class="st">"!"</span>, <span class="st">","</span>).replace(<span class="st">"!"</span>, <span class="st">","</span></span>
@@ -571,7 +571,7 @@ f
 <section id="accumulator-without-sum" class="slide level2">
 <h2>Accumulator without sum</h2>
 <p>“Go through all the items in a pile and pick out the red ones”</p>
-<div id="0c8ed544" class="cell" data-execution_count="9">
+<div id="0d522996" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href=""></a>items <span class="op">=</span> [<span class="st">"red"</span>, <span class="st">"blue"</span>, <span class="st">"red"</span>, <span class="st">"green"</span>]</span>
 <span id="cb17-2"><a href=""></a>items_we_grab <span class="op">=</span> []</span>
 <span id="cb17-3"><a href=""></a><span class="cf">for</span> item <span class="kw">in</span> items:</span>
@@ -585,7 +585,7 @@ f
 </section>
 <section id="access-specific-elements-of-a-list-using-indexingslicing" class="slide level2">
 <h2>Access specific elements of a list using indexing/slicing</h2>
-<div id="7548f306" class="cell" data-execution_count="10">
+<div id="a29b77b7" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href=""></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
 <span id="cb19-2"><a href=""></a>first_element <span class="op">=</span> numbers[<span class="dv">0</span>]    <span class="co"># 1</span></span>
 <span id="cb19-3"><a href=""></a>sliced_elements <span class="op">=</span> numbers[<span class="dv">1</span>:<span class="dv">4</span>]  <span class="co"># [2, 3, 4]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -593,7 +593,7 @@ f
 </section>
 <section id="access-specific-character-in-a-string-using-indexingslicing" class="slide level2">
 <h2>Access specific character in a string using indexing/slicing</h2>
-<div id="455862ba" class="cell" data-execution_count="11">
+<div id="f2999f17" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href=""></a>text <span class="op">=</span> <span class="st">"Hello World"</span></span>
 <span id="cb20-2"><a href=""></a>first_char <span class="op">=</span> text[<span class="dv">0</span>]  <span class="co"># 'H'</span></span>
 <span id="cb20-3"><a href=""></a>sliced_chars <span class="op">=</span> text[<span class="dv">6</span>:<span class="dv">11</span>]  <span class="co"># 'World'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -601,7 +601,7 @@ f
 </section>
 <section id="perform-comparisons-between-numbers-taking-into-account-order-of-operators-operator-precedence" class="slide level2">
 <h2>Perform comparisons between numbers, taking into account order of operators (operator precedence)</h2>
-<div id="21d3f930" class="cell" data-execution_count="12">
+<div id="6db25eca" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href=""></a>result <span class="op">=</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">4</span> <span class="op">&gt;</span> <span class="dv">10</span>  <span class="co"># Evaluates to 2 + 12 &gt; 10 =&gt; 14 &gt; 10 =&gt; True</span></span>
 <span id="cb21-2"><a href=""></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -611,7 +611,7 @@ f
 </section>
 <section id="perform-comparisons-e.g.-with-strings" class="slide level2">
 <h2>Perform comparisons (e.g.&nbsp;!=, &lt;,&gt;) with strings</h2>
-<div id="8cad160a" class="cell" data-execution_count="13">
+<div id="16ba2c2e" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href=""></a>string1 <span class="op">=</span> <span class="st">"apple"</span></span>
 <span id="cb23-2"><a href=""></a>string2 <span class="op">=</span> <span class="st">"banana"</span></span>
 <span id="cb23-3"><a href=""></a><span class="bu">print</span>(string1 <span class="op">!=</span> string2)  <span class="co"># True</span></span>
@@ -633,7 +633,7 @@ True</code></pre>
 </section>
 <section id="interpret-code-with-nested-conditionals-comparison-operators-e.g." class="slide level2">
 <h2>Interpret code with nested conditionals + comparison operators (e.g.&nbsp;!=, &lt;,&gt;=)</h2>
-<div id="cd993f84" class="cell" data-execution_count="14">
+<div id="9b7837c4" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href=""></a>x <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb25-2"><a href=""></a>y <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb25-3"><a href=""></a><span class="cf">if</span> x <span class="op">!=</span> y:</span>
@@ -657,7 +657,7 @@ True</code></pre>
 </section>
 <section id="find-the-common-elements-between-2-lists-1" class="slide level2">
 <h2>Find the common elements between 2 lists</h2>
-<div id="d58b538b" class="cell" data-execution_count="15">
+<div id="91e69f00" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href=""></a>list1 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
 <span id="cb27-2"><a href=""></a>list2 <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
 <span id="cb27-3"><a href=""></a>common_elements <span class="op">=</span> []</span>
@@ -672,7 +672,7 @@ True</code></pre>
 </section>
 <section id="understand-use-nested-for-loops" class="slide level2">
 <h2>Understand + use nested for loops</h2>
-<div id="64f943d8" class="cell" data-execution_count="16">
+<div id="02e09d11" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href=""></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
 <span id="cb29-2"><a href=""></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
 <span id="cb29-3"><a href=""></a>        <span class="bu">print</span>(i, j)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -688,7 +688,7 @@ True</code></pre>
 </section>
 <section id="apply-operator-order-to-evaluate-expressions" class="slide level2">
 <h2>Apply operator order to evaluate expressions</h2>
-<div id="c4c5746d" class="cell" data-execution_count="17">
+<div id="f9fbcb88" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href=""></a>result <span class="op">=</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">4</span> <span class="op">*</span> <span class="dv">2</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> <span class="dv">5</span>)  <span class="co"># Evaluates using operator precedence: multiplication, division, subtraction, addition</span></span>
 <span id="cb31-2"><a href=""></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -698,7 +698,7 @@ True</code></pre>
 </section>
 <section id="concatenate-lists" class="slide level2">
 <h2>Concatenate lists</h2>
-<div id="f933af85" class="cell" data-execution_count="18">
+<div id="df429a22" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href=""></a>list1 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
 <span id="cb33-2"><a href=""></a>list2 <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
 <span id="cb33-3"><a href=""></a>concatenated_list <span class="op">=</span> list1 <span class="op">+</span> list2</span>
@@ -710,7 +710,7 @@ True</code></pre>
 </section>
 <section id="apply-accumulation-pattern-for-strings-and-lists-previously-was-numbers" class="slide level2">
 <h2>Apply accumulation pattern for strings and lists (previously was numbers)</h2>
-<div id="da6c062d" class="cell" data-execution_count="19">
+<div id="99c5f87d" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href=""></a><span class="co"># For strings</span></span>
 <span id="cb35-2"><a href=""></a>words <span class="op">=</span> [<span class="st">"Hello"</span>, <span class="st">"World"</span>]</span>
 <span id="cb35-3"><a href=""></a>sentence <span class="op">=</span> <span class="st">""</span></span>
@@ -733,7 +733,7 @@ True</code></pre>
 </section>
 <section id="calculate-the-maximum-among-several-values" class="slide level2">
 <h2>Calculate the maximum among several values</h2>
-<div id="ed347654" class="cell" data-execution_count="20">
+<div id="3c483761" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href=""></a>values <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">2</span>, <span class="dv">8</span>, <span class="dv">6</span>]</span>
 <span id="cb37-2"><a href=""></a>maximum <span class="op">=</span> values[<span class="dv">0</span>]</span>
 <span id="cb37-3"><a href=""></a><span class="cf">for</span> value <span class="kw">in</span> values:</span>
@@ -767,7 +767,7 @@ True</code></pre>
 </section>
 <section id="generating-data-advanced" class="slide level2">
 <h2>Generating data (advanced)</h2>
-<div id="1d5c65b5" class="cell" data-execution_count="21">
+<div id="e9327587" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href=""></a><span class="im">import</span> csv</span>
 <span id="cb40-2"><a href=""></a><span class="im">import</span> random</span>
 <span id="cb40-3"><a href=""></a></span>
@@ -816,14 +816,14 @@ True</code></pre>
 <span id="cb40-46"><a href=""></a>    <span class="bu">print</span>(<span class="st">", "</span>.join(row))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>name, favorite_movie, second_favorite_movie, preferred_political_party, ideal_diet
-Morpheus, Lord of the Rings: The Fellowship of the Ring, Jurassic Park, left wing, balanced
-Scarlett Johansson, Inception, Back to the Future, very left wing, plant-heavy</code></pre>
+Marilyn Monroe, Gone with the Wind, Gone with the Wind, left wing, balanced
+Goku, Lord of the Rings: The Fellowship of the Ring, Avengers: Endgame, very left wing, dairy-heavy</code></pre>
 </div>
 </div>
 </section>
 <section id="check-that-you-can-read-it" class="slide level2">
 <h2>Check that you can read it</h2>
-<div id="2965a1e2" class="cell" data-execution_count="22">
+<div id="d5dd7e81" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href=""></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"fake_data.csv"</span>, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
 <span id="cb42-2"><a href=""></a>    header <span class="op">=</span> <span class="bu">file</span>.readline()   </span>
 <span id="cb42-3"><a href=""></a>    <span class="bu">print</span>(header)</span>
@@ -832,7 +832,7 @@ Scarlett Johansson, Inception, Back to the Future, very left wing, plant-heavy</
 <div class="cell-output cell-output-stdout">
 <pre><code>name,favorite_movie,second_favorite_movie,preferred_political_party,ideal_diet
 
-Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,balanced
+Marilyn Monroe,Gone with the Wind,Gone with the Wind,left wing,balanced
 </code></pre>
 </div>
 </div>
@@ -898,7 +898,7 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 </section>
 <section id="our-pseudo-code" class="slide level2">
 <h2>Our pseudo code</h2>
-<div id="4356e4fa" class="cell" data-execution_count="23">
+<div id="a73c490d" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href=""></a><span class="co"># select a user (who will receive recommendation)</span></span>
 <span id="cb44-2"><a href=""></a><span class="co"># init variables to hold top similarity score, top person, recommendation</span></span>
 <span id="cb44-3"><a href=""></a></span>
@@ -916,7 +916,7 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 </section>
 <section id="initialize-1" class="slide level2">
 <h2>Initialize</h2>
-<div id="3666ab15" class="cell" data-execution_count="24">
+<div id="c18b2408" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href=""></a><span class="co"># select a user + init variables to keep track of scores</span></span>
 <span id="cb45-2"><a href=""></a>index_of_user <span class="op">=</span> <span class="dv">17</span></span>
 <span id="cb45-3"><a href=""></a>top_score <span class="op">=</span> <span class="dv">0</span></span>
@@ -937,7 +937,7 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 </section>
 <section id="load-data" class="slide level2">
 <h2>Load data</h2>
-<div id="f2e1decc" class="cell" data-execution_count="25">
+<div id="088096d3" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href=""></a><span class="co"># select a user + init variables to keep track of scores</span></span>
 <span id="cb46-2"><a href=""></a>index_of_user <span class="op">=</span> <span class="dv">17</span></span>
 <span id="cb46-3"><a href=""></a>top_score <span class="op">=</span> <span class="dv">0</span></span>
@@ -966,7 +966,7 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 </section>
 <section id="first-for-loop" class="slide level2">
 <h2>First for loop</h2>
-<div id="38e3d2b6" class="cell" data-execution_count="26">
+<div id="26fb8c29" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href=""></a><span class="co"># select a user + init variables to keep track of scores</span></span>
 <span id="cb48-2"><a href=""></a>index_of_user <span class="op">=</span> <span class="dv">17</span></span>
 <span id="cb48-3"><a href=""></a>top_score <span class="op">=</span> <span class="dv">0</span></span>
@@ -992,55 +992,55 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 <span id="cb48-23"><a href=""></a>        <span class="bu">print</span>(columns)</span>
 <span id="cb48-24"><a href=""></a>        <span class="co"># use a nested loop to go through each item</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>['Morpheus', 'Lord of the Rings: The Fellowship of the Ring', 'Jurassic Park', 'left wing', 'balanced']
-['Scarlett Johansson', 'Inception', 'Back to the Future', 'very left wing', 'plant-heavy']
-['Dexter Morgan', 'Blade Runner', 'Back to the Future', 'left wing', 'fruit-heavy']
-['Elvis Presley', 'Back to the Future', 'Star Wars: Episode IV', 'right wing', 'fruit-heavy']
-['Bugs Bunny', 'Lord of the Rings: The Fellowship of the Ring', 'Pulp Fiction', 'left wing', 'meat-heavy']
-['Wonder Woman', 'Shrek', 'Finding Nemo', 'very right wing', 'plant-heavy']
-['The Rock', 'Shrek', 'Frozen', 'very left wing', 'plant-heavy']
-['Oprah Winfrey', 'Gone with the Wind', 'Citizen Kane', 'very left wing', 'plant-heavy']
-['Cinderella', 'Forrest Gump', 'The Godfather', 'right wing', 'dairy-heavy']
-['Usain Bolt', 'Casablanca', 'Jaws', 'very left wing', 'fruit-heavy']
-['Superman', 'Casablanca', 'Citizen Kane', 'left wing', 'balanced']
-['Cinderella', 'Finding Nemo', 'The Lion King', 'left wing', 'balanced']
-['Michael Jordan', 'The Dark Knight', 'Lord of the Rings: The Fellowship of the Ring', 'left wing', 'balanced']
-['Taylor Swift', 'Gone with the Wind', 'Jaws', 'left wing', 'meat-heavy']
-['Tom Hanks', 'Pulp Fiction', 'Jurassic Park', 'right wing', 'fruit-heavy']
-['Elvis Presley', 'Lord of the Rings: The Fellowship of the Ring', 'Jurassic Park', 'very left wing', 'meat-heavy']
-['Hermione Granger', 'Lord of the Rings: The Fellowship of the Ring', 'Pulp Fiction', 'right wing', 'meat-heavy']
-['Beyonce', 'Blade Runner', 'Blade Runner', 'left wing', 'meat-heavy']
-['Captain America', 'Casablanca', 'Jaws', 'very right wing', 'meat-heavy']
-['Dexter Morgan', 'Jaws', 'Casablanca', 'very right wing', 'plant-heavy']
-['Sherlock Holmes', 'Psycho', 'Casablanca', 'very right wing', 'balanced']
-['Bugs Bunny', 'Psycho', 'Gone with the Wind', 'left wing', 'meat-heavy']
-['Taylor Swift', 'Fight Club', 'Forrest Gump', 'left wing', 'plant-heavy']
-['Tom Hanks', 'Lord of the Rings: The Fellowship of the Ring', 'Jurassic Park', 'right wing', 'fruit-heavy']
-['Tony Stark', 'The Matrix', 'Blade Runner', 'right wing', 'meat-heavy']
-['Neo', 'Pulp Fiction', 'Pulp Fiction', 'very left wing', 'fruit-heavy']
-['Tom Hanks', 'Star Wars: Episode IV', 'Back to the Future', 'very left wing', 'plant-heavy']
-['Sheldon Cooper', 'Star Wars: Episode IV', 'Inception', 'very left wing', 'dairy-heavy']
-['Mario', 'Jurassic Park', 'Jurassic Park', 'very right wing', 'dairy-heavy']
-['Tony Stark', 'Jurassic Park', 'Avengers: Endgame', 'right wing', 'fruit-heavy']
-['Luffy', 'Jaws', 'Jaws', 'left wing', 'plant-heavy']
-['Morpheus', 'Fight Club', 'The Shawshank Redemption', 'left wing', 'dairy-heavy']
-['Marilyn Monroe', 'Casablanca', 'Casablanca', 'very right wing', 'fruit-heavy']
-['Sheldon Cooper', 'The Dark Knight', 'Pulp Fiction', 'right wing', 'balanced']
-['Spider-Man', 'Gone with the Wind', 'Citizen Kane', 'very left wing', 'fruit-heavy']
-['Spider-Man', 'Toy Story', 'The Lion King', 'very left wing', 'meat-heavy']
-['Hermione Granger', 'Frozen', 'Frozen', 'very right wing', 'meat-heavy']
-['Serena Williams', 'Back to the Future', 'The Matrix', 'right wing', 'dairy-heavy']
-['Marilyn Monroe', 'Jurassic Park', 'Lord of the Rings: The Fellowship of the Ring', 'very left wing', 'fruit-heavy']
-['Usain Bolt', 'The Lion King', 'Frozen', 'right wing', 'fruit-heavy']
-['Goku', 'Shrek', 'Toy Story', 'very left wing', 'balanced']
-['Rihanna', 'Forrest Gump', 'Forrest Gump', 'very left wing', 'fruit-heavy']
-['Oprah Winfrey', 'Lord of the Rings: The Fellowship of the Ring', 'Avengers: Endgame', 'left wing', 'balanced']
-['Michael Jordan', 'Frozen', 'Toy Story', 'very left wing', 'balanced']
-['Tom Hanks', 'Jaws', 'Citizen Kane', 'right wing', 'dairy-heavy']
-['Mulan', 'Casablanca', 'Psycho', 'right wing', 'dairy-heavy']
-['Captain America', 'Pulp Fiction', 'Lord of the Rings: The Fellowship of the Ring', 'very right wing', 'fruit-heavy']
-['The Rock', 'The Lion King', 'Shrek', 'very right wing', 'plant-heavy']
-['Goku', 'Shrek', 'The Lion King', 'left wing', 'fruit-heavy']</code></pre>
+<pre><code>['Marilyn Monroe', 'Gone with the Wind', 'Gone with the Wind', 'left wing', 'balanced']
+['Goku', 'Lord of the Rings: The Fellowship of the Ring', 'Avengers: Endgame', 'very left wing', 'dairy-heavy']
+['Sheldon Cooper', 'The Dark Knight', 'Jurassic Park', 'very right wing', 'meat-heavy']
+['Thor', 'Pulp Fiction', 'The Dark Knight', 'very right wing', 'plant-heavy']
+['Katniss Everdeen', 'Gone with the Wind', 'Gone with the Wind', 'right wing', 'meat-heavy']
+['Tom Hanks', 'The Shawshank Redemption', 'The Shawshank Redemption', 'very left wing', 'balanced']
+['Marilyn Monroe', 'The Matrix', 'Back to the Future', 'very right wing', 'meat-heavy']
+['Luke Skywalker', 'The Godfather', 'Titanic', 'very right wing', 'fruit-heavy']
+['Jack Sparrow', 'Avengers: Endgame', 'Lord of the Rings: The Fellowship of the Ring', 'very right wing', 'plant-heavy']
+['Mario', 'Back to the Future', 'Star Wars: Episode IV', 'very right wing', 'meat-heavy']
+['Tony Stark', 'The Lion King', 'Toy Story', 'very right wing', 'meat-heavy']
+['Naruto', 'Shrek', 'Shrek', 'right wing', 'dairy-heavy']
+['Superman', 'Psycho', 'Psycho', 'right wing', 'dairy-heavy']
+['Serena Williams', 'Toy Story', 'The Lion King', 'right wing', 'dairy-heavy']
+['Simba', 'Toy Story', 'The Lion King', 'left wing', 'meat-heavy']
+['The Rock', 'Lord of the Rings: The Fellowship of the Ring', 'The Dark Knight', 'left wing', 'meat-heavy']
+['Mario', 'Psycho', 'Gone with the Wind', 'very right wing', 'fruit-heavy']
+['Mario', 'Back to the Future', 'Inception', 'left wing', 'meat-heavy']
+['Thor', 'Back to the Future', 'Blade Runner', 'very right wing', 'balanced']
+['Scarlett Johansson', 'Shrek', 'Frozen', 'left wing', 'plant-heavy']
+['Hannibal Lecter', 'The Lion King', 'The Lion King', 'left wing', 'dairy-heavy']
+['Indiana Jones', 'Casablanca', 'Casablanca', 'very left wing', 'meat-heavy']
+['Tony Stark', 'The Shawshank Redemption', 'Titanic', 'right wing', 'meat-heavy']
+['The Rock', 'Toy Story', 'Shrek', 'right wing', 'balanced']
+['Lady Gaga', 'Forrest Gump', 'Forrest Gump', 'very right wing', 'meat-heavy']
+['Elsa', 'The Lion King', 'Shrek', 'very right wing', 'plant-heavy']
+['Walter White', 'Back to the Future', 'The Matrix', 'right wing', 'balanced']
+['Mulan', 'Fight Club', 'Forrest Gump', 'left wing', 'plant-heavy']
+['Hermione Granger', 'Toy Story', 'Toy Story', 'right wing', 'dairy-heavy']
+['Luffy', 'Shrek', 'Finding Nemo', 'right wing', 'meat-heavy']
+['Indiana Jones', 'Citizen Kane', 'Casablanca', 'very right wing', 'meat-heavy']
+['Neo', 'Shrek', 'Frozen', 'very right wing', 'meat-heavy']
+['Captain America', 'Avengers: Endgame', 'Jurassic Park', 'very right wing', 'fruit-heavy']
+['Morpheus', 'Toy Story', 'The Lion King', 'very right wing', 'dairy-heavy']
+['Luffy', 'Jurassic Park', 'Lord of the Rings: The Fellowship of the Ring', 'very left wing', 'balanced']
+['Wolverine', 'Lord of the Rings: The Fellowship of the Ring', 'The Dark Knight', 'right wing', 'dairy-heavy']
+['Dexter Morgan', 'The Godfather', 'Forrest Gump', 'left wing', 'balanced']
+['Sheldon Cooper', 'Forrest Gump', 'Forrest Gump', 'right wing', 'meat-heavy']
+['Goku', 'The Matrix', 'Star Wars: Episode IV', 'left wing', 'fruit-heavy']
+['Thor', 'Shrek', 'Shrek', 'right wing', 'balanced']
+['The Rock', 'Finding Nemo', 'Toy Story', 'right wing', 'fruit-heavy']
+['Naruto', 'Jurassic Park', 'Pulp Fiction', 'very right wing', 'meat-heavy']
+['Tony Stark', 'Avengers: Endgame', 'The Dark Knight', 'right wing', 'fruit-heavy']
+['Lara Croft', 'The Lion King', 'Toy Story', 'very left wing', 'meat-heavy']
+['Freddie Mercury', 'Star Wars: Episode IV', 'The Matrix', 'left wing', 'fruit-heavy']
+['Lara Croft', 'The Godfather', 'Fight Club', 'right wing', 'fruit-heavy']
+['Taylor Swift', 'The Godfather', 'Fight Club', 'right wing', 'dairy-heavy']
+['Serena Williams', 'Finding Nemo', 'Finding Nemo', 'very right wing', 'fruit-heavy']
+['James Bond', 'Jurassic Park', 'Avengers: Endgame', 'very left wing', 'balanced']</code></pre>
 </div>
 </div>
 </section>
@@ -1051,7 +1051,7 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 </section>
 <section id="nested-loop" class="slide level2">
 <h2>Nested loop</h2>
-<div id="63b59b85" class="cell" data-execution_count="27">
+<div id="377f6f8c" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href=""></a><span class="co"># select a user + init variables to keep track of scores</span></span>
 <span id="cb50-2"><a href=""></a>index_of_user <span class="op">=</span> <span class="dv">17</span></span>
 <span id="cb50-3"><a href=""></a>top_score <span class="op">=</span> <span class="dv">0</span></span>
@@ -1106,16 +1106,16 @@ Morpheus,Lord of the Rings: The Fellowship of the Ring,Jurassic Park,left wing,b
 </section>
     <section id="nested-loop-output" class="slide level2 output-location-slide"><h2>Nested loop</h2><div class="cell output-location-slide" data-execution_count="27">
 <div class="cell-output cell-output-stdout">
-<pre><code>Skipping  Sherlock Holmes,Back to the Future,Blade Runner,left wing,meat-heavy
+<pre><code>Skipping  Jack Sparrow,Avengers: Endgame,Lord of the Rings: The Fellowship of the Ring,very right wing,plant-heavy
 
-Skipping  Sherlock Holmes,Psycho,Casablanca,very right wing,balanced
+Skipping  Jack Sparrow,Star Wars: Episode IV,Inception,left wing,plant-heavy
 
-You are ['Sherlock Holmes', 'Back to the Future', 'Blade Runner', 'left wing', 'meat-heavy']
+You are ['Jack Sparrow', 'Star Wars: Episode IV', 'Inception', 'left wing', 'plant-heavy']
 After careful consideration, we have found that the most similar user is
-Bugs Bunny,Lord of the Rings: The Fellowship of the Ring,Pulp Fiction,left wing,meat-heavy
+Scarlett Johansson,Shrek,Frozen,left wing,plant-heavy
 
 You have a similarity score of 2
-We recommend you watch Pulp Fiction</code></pre>
+We recommend you watch Frozen</code></pre>
 </div>
 </div></section></div>
   </div>

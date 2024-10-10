@@ -1,6 +1,6 @@
 ---
 title: "CMPT 120 Lecture 6-1"
-date: "2023-10-07"
+date: "2024-10-07"
 author: "Prof. Nick Vincent"
 institute: "Simon Fraser University"
 format:

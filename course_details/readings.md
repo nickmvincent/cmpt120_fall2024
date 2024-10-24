@@ -5,13 +5,15 @@ For pre-midterm readings and learning outcomes, see Canvas Learning Outcomes / R
 ## Week 7
 
 During Week 7, you read from Runestone:
-- [9.6](https://runestone.academy/ns/books/published/thinkcspy/Strings/Length.html), - [9.7](https://runestone.academy/ns/books/published/thinkcspy/Strings/StringsareImmutable.html)
-- [9.11](https://runestone.academy/ns/books/published/thinkcspy/Strings/TraversalandtheforLoopByIndex.html)
-- Chapter 1 from Gaddis, Introduction to Computers and Programming
+- [9.6](https://runestone.academy/ns/books/published/thinkcspy/Strings/Length.html) (covers `len`)
+- [9.7](https://runestone.academy/ns/books/published/thinkcspy/Strings/StringsareImmutable.html) (covers immutability of strings)
+- [9.11](https://runestone.academy/ns/books/published/thinkcspy/Strings/TraversalandtheforLoopByIndex.html) (covers loops by index)
+- Chapter 1 from Gaddis, Introduction to Computers and Programming (bits and bytes)
 
 After these readings and corresponding lectures, you should feel comfortable with the following topics:
 
-- Knows what a bit represents in a computer
+- `len`, strings are immutable, loops by index
+- Know what a bit represents in a computer
 - Convert a given number of bytes (or kb, mb) to bits
 - Convert binary <> decimal
 - Understand the goal of hexadecimal
@@ -25,12 +27,21 @@ After these readings and corresponding lectures, you should feel comfortable wit
 
 During week 8, you should read
 
-- Runestone Chapter 4
-  - Read [4.1](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html), [4.2](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html), [4.3](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/InstancesAHerdofTurtles.html), [4.6](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/IterationSimplifiesourTurtleProgram.html), [4.7](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/TherangeFunction.html), [4.8](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/AFewMoreturtleMethodsandObservations.html), and [4.9](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/SummaryofTurtleMethods.html).
+- Runestone Chapter 4, which covers the `turtle` module and drawing images in Python
+  - [4.1](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html)
+  - [4.2](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html)
+  - [4.3](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/InstancesAHerdofTurtles.html)
+  - [4.6](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/IterationSimplifiesourTurtleProgram.html)
+  - [4.7](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/TherangeFunction.html)
+  - [4.8](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/AFewMoreturtleMethodsandObservations.html), and [4.9](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/SummaryofTurtleMethods.html).
   - You can go quickly through these readings: we will cover the content directly in lecture.
   - In 4.4. and 4.5, you've already seen the for loop. revisit them if you want to review.
-- Start Runestone Chapter 6
-  - Read [6.1](https://runestone.academy/runestone/books/published/thinkcspy/Functions/functions.html), 6.2, and 6.4 and [6.11](https://runestone.academy/ns/books/published/thinkcspy/Functions/ATurtleBarChart.html). You can skip 6.3 for now (though if you are considering software engineering, you want to just read it now!)
+- Start Runestone Chapter 6, which covers functions
+  - [6.1](https://runestone.academy/runestone/books/published/thinkcspy/Functions/functions.html)
+  - [6.2](https://runestone.academy/ns/books/published/thinkcspy/Functions/Functionsthatreturnvalues.html)
+  - [6.4](https://runestone.academy/ns/books/published/thinkcspy/Functions/Variablesandparametersarelocal.html)
+  - [6.11](https://runestone.academy/ns/books/published/thinkcspy/Functions/ATurtleBarChart.html) (connects functions back to turtle))
+  - You can skip 6.3 for now (though if you are considering software engineering, you want to just read it now!)
 - Read about while loops from Chapter 8
   - Read [8.3](https://runestone.academy/runestone/books/published/thinkcspy/MoreAboutIteration/ThewhileStatement.html) and [8.8](https://runestone.academy/runestone/books/published/thinkcspy/MoreAboutIteration/SentinelValuesAndValidation.html)
   - Option video suggestion: watch the second half of this [video](https://www.youtube.com/watch?v=6iF8Xb7Z3wQ)
@@ -164,6 +175,7 @@ During Week 11, please read
 - [16.4](https://runestone.academy/ns/books/published/thinkcspy/IntroRecursion/ConvertinganIntegertoaStringinAnyBase.html) for another example of recursion with strings
 
 We'll also go back to Chapter 6 and read:
+
 - [6.2](https://runestone.academy/ns/books/published/pythonds/SortSearch/searching.html)
 - [6.3](https://runestone.academy/ns/books/published/pythonds/SortSearch/TheSequentialSearch.html)
 - [6.4](https://runestone.academy/ns/books/published/pythonds/SortSearch/TheBinarySearch.html)

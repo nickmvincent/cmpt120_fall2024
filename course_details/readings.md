@@ -25,7 +25,7 @@ After these readings and corresponding lectures, you should feel comfortable wit
 
 ## Week 8
 
-During week 8, you should read
+Starting Week 8, you should read the following items. Because of our midterm timing, these may extend into Week 9 (the Week 9 reading list is much shorter).
 
 - Runestone Chapter 4, which covers the `turtle` module and drawing images in Python
   - [4.1](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html)
@@ -90,7 +90,7 @@ for i in range(...):
 
 ## Week 9
 
-During Week 9, you should read the rest of Chapter 6. Then, we'll read about Image Processing
+During Week 9, you'll read a few quick chapter from Runestone Chapter 6, and then start some readings about image processing.
 
 - Finishing Runestone Chapter 6
   - [6.6](https://runestone.academy/ns/books/published/thinkcspy/Functions/Functionscancallotherfunctions.html) and [6.7](https://runestone.academy/ns/books/published/thinkcspy/Functions/FlowofExecutionSummary.html)

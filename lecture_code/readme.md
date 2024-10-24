@@ -1,1 +1,0 @@
-This dir has the quarto and sli.dev code for generating programmatic lecture slides.

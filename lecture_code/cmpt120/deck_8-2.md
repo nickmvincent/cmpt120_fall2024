@@ -33,16 +33,18 @@ overviewSnapshots: true
 
 ## Agenda for Today
 
-- Announcements and Housekeeping
+- Announcements
 - Quick comments on midterm
 - `def`, `while`, `continue`, `break`, bits and bytes, oh my!
 
 ---
+title: Announcements
+---
 
-## Announcements and Housekeeping
+## Announcements
 
-- Putting course content on GitHub going forward
-- Assignment 4 extension
+- Putting more course content on GitHub going forward (readings, slides, due dates)
+- Assignment 4 extension (now *due* Oct 30)
 - Midterm marks and grading details: as soon as possible!
 
 ---
@@ -406,30 +408,27 @@ title: How to Read Binary Code
 
 ---
 title: Reading Binary Code
+layout: center
 ---
 
-# Reading Binary Code
+# Reading Binary
 
-<div class="text-center text-2xl mb-6">
-  Understanding Binary to Decimal
-</div>
+<style>
+  table {
+    font-size: 1.2em;
+  }
+  th, td {
+    padding: 8px 16px;
+    text-align: center;
+  }
+</style>
 
-- **Each binary digit (bit)** represents a power of 2.
-  
-- Start from the **rightmost bit** (least significant) and move left.
+| Power of 2 | 2⁷  | 2⁶  | 2⁵  | 2⁴  | 2³  | 2²  | 2¹  | 2⁰  |
+|------------|-----|-----|-----|-----|-----|-----|-----|-----|
+| Value      | 128 | 64  | 32  | 16  | 8   | 4   | 2   | 1   |
+| Binary     | 1   | 0   | 1   | 1   | 0   | 1   | 0   | 1   |
 
----
-
-# Example: Binary `1011`
-
-| Position (Bit) | Power of 2  | Binary Digit | Value (Binary * Power) |
-| -------------- | ----------- | ------------ | ---------------------- |
-| 3              | 2^3 = 8     | 1            | 1 * 8 = 8              |
-| 2              | 2^2 = 4     | 0            | 0 * 4 = 0              |
-| 1              | 2^1 = 2     | 1            | 1 * 2 = 2              |
-| 0              | 2^0 = 1     | 1            | 1 * 1 = 1              |
-
-- **Sum the values**: 8 + 0 + 2 + 1 = **11**
+Total: 128 + 0 + 32 + 16 + 0 + 4 + 0 + 1 = 181
 
 ---
 
@@ -443,7 +442,51 @@ title: Reading Binary Code
 
 
 ---
-
-ASCII
+title: ASCII
+---
 
 ASCII is a table that maps decimal numbers to characters
+
+---
+layout: center
+---
+
+# ASCII Table (American Standard Code for Information Interchange)
+
+<style>
+  table {
+    font-size: 1.1em;
+  }
+  th, td {
+    padding: 6px 12px;
+    text-align: center;
+  }
+</style>
+
+| Character | Binary      | Decimal | Hexadecimal | Description     |
+|-----------|------------|---------|-------------|-----------------|
+| `A`       | 0100 0001  | 65      | 0x41        | Uppercase A    |
+| `a`       | 0110 0001  | 97      | 0x61        | Lowercase a    |
+| `0`       | 0011 0000  | 48      | 0x30        | Number zero    |
+| ` `       | 0010 0000  | 32      | 0x20        | Space          |
+| `!`       | 0010 0001  | 33      | 0x21        | Exclamation    |
+| `\n`      | 0000 1010  | 10      | 0x0A        | New line       |
+
+<div class="text-sm mt-4">
+Note: ASCII uses 7 bits, allowing for 128 characters (0-127).<br>
+Extended ASCII uses 8 bits, allowing for 256 characters (0-255).
+</div>
+
+
+--- 
+title: Unicode
+---
+
+- Unicode is a superset of ASCII. 
+- A is a super of B means A includes B, but also other stuff.
+- ASCII (American Standard Code for Information Interchange) defines 128 characters, including English letters, digits, and control characters, using 7 bits per character. 
+- Unicode, on the other hand, was designed to encompass more characters from more writing systems worldwide, using up to 32 bits per character. The first 128 characters in Unicode are identical to ASCII, ensuring backward compatibility.
+
+---
+
+---

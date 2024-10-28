@@ -359,6 +359,7 @@ def binary_to_decimal(binary_str):
 
 ---
 
+
 ## Step 2: Write a function to convert decimal to ascii
 
 (Turns out we can just use a Python built-in: effectively we're just giving it a new name)

@@ -267,6 +267,7 @@ We'll also go back to Chapter 6 and read:
   - Able to recognize a binary search and produce code for it
   - Able to produce the code for a recursive binary search
 
+Code snippets are getting longer. See lecture slides.
 
 ## Week 13
 

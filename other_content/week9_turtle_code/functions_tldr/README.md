@@ -29,7 +29,7 @@ At the end of your function (or sometimes, in the middle), you use `return` to s
 
 ## Some examples
 ```
-def greet(name):
+def greet(name_arg):
     message = f"Hello, {name}!"
     return message
 
@@ -38,7 +38,7 @@ result = greet("Alice")
 print(result)  # Output: Hello, Alice!
 ```
 
-- "greet" function takes a single argument (`name`), constructs a greeting message (using f string), and returns it. When called with the argument "Alice", it returns the string "Hello, Alice!".
+- "greet" function takes a single argument (`name_arg`), constructs a greeting message (using f string), and returns it. When called with the argument "Alice", it returns the string "Hello, Alice!".
 
 
 
@@ -54,9 +54,22 @@ Helpful to imagine your function being *code in a different file*
 
 ## Default arguments
 
-def power(base, exponent=2):
+def power_v1(base, exponent):
     result = base ** exponent
     return result
+
+power_v1(3,5)
+power_v1(4,6)
+power_v1(3)
+
+def power_v2(base, exponent=2):
+    result = base ** exponent
+    return result
+
+def my_crazy_math(a=100,b=17,c=53):
+  return a*b*c
+
+
 
 # Usage:
 

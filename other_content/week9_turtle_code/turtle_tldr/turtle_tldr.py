@@ -1,12 +1,10 @@
-
-
 import turtle
 
 # # Create a turtle object named pet
-# pen = turtle.Turtle()
+pen = turtle.Turtle()
 
 # # Set the turtle's speed to the fastest
-# pen.speed(0)
+pen.speed(0)
 
 # # Use forward and left to draw a triangle.
 # # stamp at each vertex
@@ -44,4 +42,4 @@ import turtle
 
 # # Hide the turtle and display the result
 # pen.hideturtle()
-# turtle.done()
+turtle.done()

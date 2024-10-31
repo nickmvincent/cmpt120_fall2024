@@ -33,9 +33,10 @@ overviewSnapshots: true
 
 ## Agenda for Today
 
-- Functions (again)
+- Blast through functions one more time (important addition: talk about mental model)
 - Turtle: Drawing in Python
-
+- Review While Loops
+- your questions and/or extra practice test-style questions
 
 ---
 title: Functions in Python
@@ -120,6 +121,7 @@ Challenge: What's an example of a function with a default argument that we've us
 
 ---
 
+```python
 # Try to get this code to run by ONLY ADDING things
 
 # give this a default argument
@@ -172,15 +174,7 @@ except Exception as e:
 for success in successes:
     print(success)
 
----
-
-# Examples of Functions
-
-Here are more examples from `functions.py`:
-
-1. `f1(x)` doubles its input.
-2. `f2(a, b)` returns the sum of `a` and `b`.
-3. `f3()` returns a greeting.
+```
 
 ---
 
@@ -188,9 +182,18 @@ Here are more examples from `functions.py`:
 # Summary
 
 - Define functions with `def` and indent all code inside.
-- Functions have their own scope; use arguments and returns wisely.
+- Functions have their own scope; use arguments and returns.
 - Use default arguments to make functions flexible.
 - Troubleshoot by testing each function individually.
+
+---
+
+# One useful mental model: Buckets and Robots
+
+- Variables are buckets (different shapes and sizes)
+- Functions are little robots that do things
+- Variables hold a value
+- Functions act on those values, change things, and bring things back to you!
 
 ---
 title: Turtle Graphics and Practice
@@ -200,7 +203,7 @@ title: Turtle Graphics and Practice
 
 Now, let's do a "Too Long, Didn't Read" tutorial on Python's Turtle graphics. 
 
-- aim to complement other learning materials by offering hands-on practice.
+- aim to complement other learning materials.
 
 ---
 

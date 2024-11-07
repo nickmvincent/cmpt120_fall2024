@@ -249,19 +249,21 @@ We need to to download some files.
 - `kid-green.jpg`
 - `beach.jpg`
 
-Currently in Canvas > Modules > Week 10.
+`cmpt120image.py` is in GitHub > other_content > week10_more_images
 
-Alternate image options at this [link](https://github.com/nickmvincent/cmpt120_fall2024/tree/main/other_content/week10_more_images)
+(github.com/nickmvincent/cmpt120_fall2024)
 
-GitHub > other_content > week10_more_images
+At this [link](https://github.com/nickmvincent/cmpt120_fall2024/tree/main/other_content/week10_more_images)
+
+The images in this file are for an extra challenge
+
+Images in Canvas > Modules > Week 10.
 
 ---
 
 ## Prerequisites: Installing a new Python library
 
-And we need to install a new Python library
-
-- `pygame`
+And we need to install a new Python library, `pygame`
 
 ---
 
@@ -269,12 +271,11 @@ And we need to install a new Python library
 
 Ok, time to import an existing image.
 
-- Download cmpt120image.py
+- Download pygame:
   - Try: `pip3 install pygame`
     - Didn't work? try `pip install pygame`
       - Didn't work? try `python3 -m pip install -U pygame==2.6.0`
         - Didn't work? Office hours
-- Create a new script
 
 ---
 
@@ -419,8 +420,6 @@ How to get width?
   - `image[0][0], image[0][1]`
 - Then, try editing one of  individual values
 
-
-
 ---
 
 ## Starter code for green screen
@@ -428,26 +427,29 @@ How to get width?
 In your new script, here's our starting code:
 
 ```python
+import cmpt120image as img_module
+img_module.init()
 
-import cmpt120image
-
-img = cmpt120image.get_image('kid-green.jpg')
+img = cmpt120image.get_image('chatgpt_raccoon.jpg')
 print(img[0][0])
 ```
 
 ---
 
+## A single pixel?
+
+
 What's in `img[0][0]`?
 
 ---
 
-Brief intermission: look at some example RGB color values.
+If time: Brief intermission, look at some example RGB color values.
 
 ---
 
-Reminder of our goal:
+## Reminder of our goal:
 
-write a program that can merge a green screen image with another background, using the following concepts:
+Write a program that can merge a green screen image with another background, using the following concepts:
 
 - Colours in RGB space
 - Pixel representations of images in 2D arrays, e.g. `image[row][col]`
@@ -456,11 +458,17 @@ write a program that can merge a green screen image with another background, usi
 
 --- 
 
+## How to merge a green screen image?
+
 To merge a green screen image, we probably need to do something with all the green pixels?
 
-What function might we want?
+What function might we want, to start?
+
+
 
 ---
+
+## is_green function
 
 Complete the `is_green` function in Python. 
 
@@ -539,6 +547,8 @@ def is_green(img, x ,y):
 ```
 
 ---
+
+## The "Best" Arguments to accept?
 
 Question: Which is better?
 
@@ -625,6 +635,8 @@ for row in range(100):
 ```
 
 ---
+
+## Try to write a file!
 
 Ok! We can give it a first go.
 
@@ -794,12 +806,6 @@ x = 5 # means there's a "bucket/slot" in our RAM somewhere that is holding the v
 print(id(x)) # prints out that id
 ```
 
-
----
-
-ASCII Art
-
-
 ---
 
 Here's where things get a little weird with list
@@ -840,7 +846,10 @@ A copy takes extra space, but we can edit them separately
 
 ---
 
-To the Python code visualizer!
+## To the Python code visualizer!
+
+
+
 
 ---
 

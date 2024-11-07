@@ -41,7 +41,8 @@ overviewSnapshots: true
 
 - things that are due for the rest of the semester
   - assignment 5 (nov 10)
-  - project part 1 (listed as nov 15, but will be extended)
+  - project part 1 (listed as nov 15, but will be extended to Nov 22.)
+    - I posted the Canvas page for this just so you can see the deadline; full details will be posted after lecture.
   - project part 2  (listed as dec 1, cannot extend this one!)
   - you need to show up to the final in person and turn your exam (very important!)
 
@@ -49,10 +50,9 @@ That's it! I'll keep all these things in mind for our remaining class time and t
 
 ---
 
-## overview of content and reminder of learning outcomes
+## Overview of content and reminder of learning outcomes (slide 1)
 
-Modules
-
+### Modules
 
 You should know:
 
@@ -64,10 +64,11 @@ You should know:
 
 ---
 
-# overview of content and reminder of learning outcomes
+## Overview of content and reminder of learning outcomes (slide 2)
 
+### Modules
 
-- Image process and 2D list / 3D list manipulation:
+- Image processing and 2D list / 3D list manipulation:
   - How pixel colors are represented by RGB values 
   - How to pass global variables into local scope
   - That you can to directly return a Boolean expression in a function without using if statement in the function (e.g. `return x > 10`)
@@ -77,13 +78,9 @@ You should know:
   - How to read, show and save images using the 3Dlist representing an image as provided in the cmpt120images module 
   - How to extract and/or change the color as RGB and/or individual color components of a pixel using a 3DList representing an image as provided in the cmpt120images module
 
-
-
 ---
 
-
-
-## New Module: Broad intro Computer vision
+## New Module: Broad Intro to Computer Vision
 
 Many applications:
 
@@ -95,41 +92,36 @@ Many applications:
 
 ---
 
-What is an image?
+## What is an image?
 
-Philosophically?
+Simple question: "What is an image?""
 
-In analog media?
-
-In digital media?
+- Philosophically?
+- In analog media?
+- In digital media?
 
 
 ---
 
-What if we wanted to make a game in our terminal?
+## A "Map" in Terminal
 
+What if we wanted to make a game in our terminal?
 
 ```
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~           🌲 FOREST OF ARCADIA 🌲         ~
+~           🌲 FOREST OF Computia 🌲         ~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
   ░        ████████                          ░
   ░      ██        ██                        ░
   ░    ██  ⛺  CAMP  ██                       ░
-  ░     ██        ██                         ░
   ░       ████████                           ░
-  ░                                          ░
-  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
   ░                                          ░
   ░   ████████████████████                    ░
   ░   ██                ██                    ░
   ░   ██     🗝️ CAVE    ██                    ░
-  ░   ██                ██                    ░
   ░   ████████████████████                    ░
-  ░                                          ░
-  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
   ░                                          ░
   ░   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ░
   ░   ░               🌊 LAKE               ░   ░
@@ -142,6 +134,8 @@ Legend:
 ```
 
 ---
+
+## A "Map" in Terminal
 
 Using mostly zeros and 1s?
 
@@ -160,15 +154,6 @@ Using mostly zeros and 1s?
 1000111   CAVE   11100000000000000000000000001
 1000111000000000001110000000000000000000000001
 1000111111111111111110000000000000000000000001
-1000000000000000000000000000000000000000000001
-1111111111111111111111111111111111111111111111
-1000000000000000000000000000000000000000000001
-1000000000000000000000000000000000000000000001
-1000111111111111111111111111111111111111110001
-1000100000000000000000000000000000000000000001
-1000111111111111111111111111111111111111111111
-1000000000000000000000000000000000000000000001
-1111111111111111111111111111111111111111111111
 
 Legend:
 1 = Wall/Boundary
@@ -191,7 +176,6 @@ map_grid = [
     [1, 0, 1, 1, 1, 1, 0, 1, 0, 1],
     [1, 0, 0, 0, 0, 1, 0, 0, 2, 1],
     [1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
 
 # Display the map
@@ -226,12 +210,13 @@ for row in map_grid_rgb:
 
 Ok, this is obviously getting a bit ridiculous.
 
-If you really had to, you could "complete this maze"...
+If you really had to, I'd bet you could "complete this maze"...
 
 but let's actually visualize it!
 
-
 ---
+
+## Motivating Task: Green Screen
 
 Today's goal:
 
@@ -244,8 +229,11 @@ write  a program that can merge a green screen image with another background, us
 
 --- 
 
+## Green Screen
 
 What's a green screen?
+
+https://en.wikipedia.org/wiki/Chroma_key
 
 ---
 
@@ -262,6 +250,8 @@ And we need to install a new Python library
 - `pygame`
 
 ---
+
+## 3D List
 
 We're going to use the list-of-lists-of-3-item-list approach we saw above
 
@@ -280,6 +270,8 @@ image = [
 
 ---
 
+## RGB reminders
+
 Important (testable!) facts about RGB
 
 - 3 integers between 0 and 255
@@ -294,9 +286,9 @@ One single color (e.g. "light red") thus uses up 4 * 2 * 3 = 24 bits
 
 ---
 
-## Remembering conventions about rows and columns (120 and beyond)
+## Conventions about rows and columns (120 and beyond)
 
-- Should row come first or column come first? It’s just convention
+- Should row come first or column come first? It’s just convention.
 - Just another human choice, like the default arguments of our Python methods, the choice of which Python keywords are “special”
 - Somebody just liked the words “for”, “if”, etc.
 - In linear algebra $A_i,j$ conventionally means the i-th row, j-th column of matrix A
@@ -365,7 +357,6 @@ But ultimately, we are just somewhat-arbitrarily choosing to say
 “Let’s represent our image as a list of lists…
 Each of the individual lists will correspond to a row”
 
-Other libraries might choose to do something else 
 We could have each list represent a column. We could use one-indexing. Etc!
 
 Why harp on this?
@@ -374,6 +365,8 @@ Why harp on this?
 - For those who want to do more linear algebra, computer vision, etc. – it may be of interest!
 
 ---
+
+## Height and width
 
 Height and width of of an image use this list-of-lists (black and white) or list-of-list-of-lists (RGB) approach?
 
@@ -394,12 +387,13 @@ How to get width?
 
 ---
 
-Ok, time to import an existing image
+## Using cmpt120image.py and pygame
+
+Ok, time to import an existing image.
 
 - Download cmpt120image.py
   - Try: `pip3 install pygame`
 - Create a new script
-
 
 
 ---
@@ -426,13 +420,12 @@ Brief intermission: look at some example RGB color values.
 
 Reminder of our goal:
 
-write  a program that can merge a green screen image with another background, using the following concepts:
+write a program that can merge a green screen image with another background, using the following concepts:
 
 - Colours in RGB space
 - Pixel representations of images in 2D arrays, e.g. `image[row][col]`
 - Functions that return values
 - Modules
-
 
 --- 
 
@@ -442,7 +435,7 @@ What function might we want?
 
 ---
 
-Complete the is_green function in Python. 
+Complete the `is_green` function in Python. 
 
 It should return True if the red, green and blue channels are all within 30 of 0, 255, and 0 respectively.
 
@@ -483,14 +476,20 @@ Note that
 
 is a convenient way to return a boolean expression without actually using `if` statements
 
+(Learning Outcome!)
 
 
 ---
+
+## Different arguments
+
 
 How about rewriting our function so that it takes as arguments
 - the entire image
 - x coordinate
 - y coordinate
+
+
 
 ---
 
@@ -514,7 +513,21 @@ def is_green(img, x ,y):
 
 ---
 
+Question: Which is better?
+
+`def is_green(img, x ,y):`
+
+vs 
+
+`def is_green(r,g,b):`
+
+---
+
+## Multiple assignment
+
 Advanced tip: Python has a nice convenient ("ergonomic!") feature to put elements in a list (if you know it's length) into variables
+
+called "tuple unpacking" or "multiple assignment"
 
 Can save some lines in our above function. This is optional.
 
@@ -524,7 +537,7 @@ r, g, b = img[x][y]
 
 ---
 
-## Review questions
+## Review questions (Slide 1)
 
 1. Name 2 applications areas of computer vision
 2. If given an image in variable named `awesome_image`, how do we get the pixel that's pixels down, 8 to the right?
@@ -533,9 +546,18 @@ r, g, b = img[x][y]
 
 ---
 
+## Review questions (Slide 2)
+
+
 5. Which colour is [0,0,50] closet to? (dark / light + red / green / blue)
 6. In a blank Python file, initialize a list of lists of lists that gives a small, 2x2 4 pixel image with red in top left, green in top right, blue in bottom left, and black in bottom right.
+
+---
+
+## Review questions (Slide 3)
+
 7. Look at this list
+
 
 ```python
 img = [ [[10,20,30], [15,20,200]], 
@@ -551,7 +573,7 @@ img = [ [[10,20,30], [15,20,200]],
 
 ---
 
-## Nested loops
+## Nested loops and images
 
 We can use nested loops to initialize an image
 
@@ -563,10 +585,11 @@ for row in range(100):
 
 ---
 
+## Traversing image with nested loops
+
 We can also traverse our image this way.
 
 Let's put our snippets together into a single file.
-
 
 ```python
 for row in range(100):
@@ -588,7 +611,6 @@ Two options for debugging:
 ---
 
 ## Reorganizing our code into a module
-
 
 - Put our function in a separate file
 - Now we can `import xyz`

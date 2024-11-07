@@ -1,7 +1,6 @@
 ---
 # You can also start simply with 'default'
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
 background: images/kseniia-rastvorova-U2AwijfUNS4-unsplash.jpg
 title: Week 8
 info: |

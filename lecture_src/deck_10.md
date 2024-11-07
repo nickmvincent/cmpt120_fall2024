@@ -1,5 +1,5 @@
 ---
-theme: seriph
+theme: default
 background: images/kseniia-rastvorova-U2AwijfUNS4-unsplash.jpg
 title: Week 10
 info: |
@@ -15,6 +15,9 @@ transition: slide-left
 mdc: true
 # take snapshot for each slide in the overview
 overviewSnapshots: true
+
+
+
 ---
 
 # Welcome to Week 10
@@ -27,17 +30,20 @@ overviewSnapshots: true
   </span>
 </div>
 
+
 ---
 
-## Agenda for Today
+# Agenda for Today
 
 - Housekeeping
 - Content: Modules and Image Processing!
 
 
+
+
 ---
 
-## Housekeeping
+# Housekeeping
 
 - things that are due for the rest of the semester
   - assignment 5 (nov 10)
@@ -52,8 +58,6 @@ That's it! I'll keep all these things in mind for our remaining class time and t
 
 ## Overview of content and reminder of learning outcomes (slide 1)
 
-### Modules
-
 You should know:
 
 - Modules!
@@ -66,14 +70,16 @@ You should know:
 
 ## Overview of content and reminder of learning outcomes (slide 2)
 
-### Modules
-
 - Image processing and 2D list / 3D list manipulation:
   - How pixel colors are represented by RGB values 
   - How to pass global variables into local scope
   - That you can to directly return a Boolean expression in a function without using if statement in the function (e.g. `return x > 10`)
   - How to access and modify a 2D image in the form of a list of lists (with 0s and 1s)
   - How to access and modify a 3d image in the form of a list of lists (with 3-item RGB lists)
+
+---
+
+- More from Image processing and 2D list / 3D list manipulation:
   - How to manipulate 2 dimensional lists, process a row, process a column, process a specific element
   - How to read, show and save images using the 3Dlist representing an image as provided in the cmpt120images module 
   - How to extract and/or change the color as RGB and/or individual color components of a pixel using a 3DList representing an image as provided in the cmpt120images module
@@ -126,7 +132,6 @@ What if we wanted to make a game in our terminal?
   ░   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ░
   ░   ░               🌊 LAKE               ░   ░
   ░   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ░
-  ░                                          ░
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 Legend:
@@ -135,7 +140,7 @@ Legend:
 
 ---
 
-## A "Map" in Terminal
+# A "Map" in Terminal
 
 Using mostly zeros and 1s?
 
@@ -147,7 +152,6 @@ Using mostly zeros and 1s?
 1001100  CAMP  0011000000000000000000000000001
 1000100111111000100000000000000000000000000001
 1000000000000000000000000000000000000000000001
-1111111111111111111111111111111111111111111111
 1000000000000000000000000000000000000000000001
 1000111111111111111110000000000000000000000001
 1000111000000000001110000000000000000000000001
@@ -244,6 +248,8 @@ We need to to download some files.
 - `cmpt120image.py`
 - `kid-green.jpg`
 - `beach.jpg`
+
+Currently in Canvas > Modules > Week 10
 
 And we need to install a new Python library
 

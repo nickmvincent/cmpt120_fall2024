@@ -150,16 +150,22 @@ while i <10:
 
 ### Week 10 Learning Outcomes
 
-- Able to create and use a module containing one's own defined functions
-- Knows how pixel colors are represented by RGB values 
-- Knows how to pass global variables into local scope
-- Knows to directly return the Boolean value evaluated from a Boolean expression in a function without using if statement in the function,  and call the function and use the returned Boolean value.
-- Able to access and modify a 2D image in the form of a list of lists, containing RGB values in the form of a list
-- Able to manipulate 2 dimensional lists, process a row, process a column, process a specific element
-- Knows how to import and access the contents of packages and modules
-- Knows how to import a module with a short name
-- Able to read, show and save images using the 3Dlist representing an image as provided in the cmpt120images module 
-- Able to extract and/or change the color as RGB and/or individual color components of a pixel using a 3DList representing an image  as provided in the cmpt120images module
+You should know:
+
+- Modules!
+  - How to create and use a module containing one's own defined functions
+  - How to import and access the contents of packages and modules
+  - How to import a module with a short name
+
+- Image process and 2D list / 3D list manipulation:
+  - How pixel colors are represented by RGB values 
+  - How to pass global variables into local scope
+  - That you can to directly return a Boolean expression in a function without using if statement in the function (e.g. `return x > 10`)
+  - How to access and modify a 2D image in the form of a list of lists (with 0s and 1s)
+  - How to access and modify a 3d image in the form of a list of lists (with 3-item RGB lists)
+  - How to manipulate 2 dimensional lists, process a row, process a column, process a specific element
+  - How to read, show and save images using the 3Dlist representing an image as provided in the cmpt120images module 
+  - How to extract and/or change the color as RGB and/or individual color components of a pixel using a 3DList representing an image as provided in the cmpt120images module
 
 
 ### Week 10 Code Snippets

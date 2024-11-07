@@ -241,7 +241,7 @@ https://en.wikipedia.org/wiki/Chroma_key
 
 ---
 
-## Prerequisites
+## Prerequisites: Downloading images
 
 We need to to download some files.
 
@@ -249,11 +249,32 @@ We need to to download some files.
 - `kid-green.jpg`
 - `beach.jpg`
 
-Currently in Canvas > Modules > Week 10
+Currently in Canvas > Modules > Week 10.
+
+Alternate image options at this [link](https://github.com/nickmvincent/cmpt120_fall2024/tree/main/other_content/week10_more_images)
+
+GitHub > other_content > week10_more_images
+
+---
+
+## Prerequisites: Installing a new Python library
 
 And we need to install a new Python library
 
 - `pygame`
+
+---
+
+## Using cmpt120image.py and pygame
+
+Ok, time to import an existing image.
+
+- Download cmpt120image.py
+  - Try: `pip3 install pygame`
+    - Didn't work? try `pip install pygame`
+      - Didn't work? try `python3 -m pip install -U pygame==2.6.0`
+        - Didn't work? Office hours
+- Create a new script
 
 ---
 
@@ -269,8 +290,8 @@ We're going to use the list-of-lists-of-3-item-list approach we saw above
 
 ```python
 image = [
-    [ []  [] ]
-    [ [], [] ]
+    [ [0,0,0]  [255,255,255] ]
+    [ [0,0,0], [255,255,255] ]
 ]
 ```
 
@@ -284,10 +305,10 @@ Important (testable!) facts about RGB
 - requires 2 digits in hexadecimal (between 0 - F)
 - A is 10, B is 11, C is 12, D is 13, E is 14, F is 15
 - only 16 options in hexadecimal so we just need 4 bits per character
-
+```
 FF -> 15 15 -> 1111 1111
 5A -> 5 10 -> 0011 0110
-
+```
 One single color (e.g. "light red") thus uses up 4 * 2 * 3 = 24 bits
 
 ---
@@ -295,24 +316,24 @@ One single color (e.g. "light red") thus uses up 4 * 2 * 3 = 24 bits
 ## Conventions about rows and columns (120 and beyond)
 
 - Should row come first or column come first? It’s just convention.
-- Just another human choice, like the default arguments of our Python methods, the choice of which Python keywords are “special”
+- in other words: just another choice someone made in implementing a language / software / discipline!
+- like the default arguments of our Python methods, the choice of which Python keywords are “special”
 - Somebody just liked the words “for”, “if”, etc.
-- In linear algebra $A_i,j$ conventionally means the i-th row, j-th column of matrix A
+- In linear algebra $A_{i,j}$ conventionally means the i-th row, j-th column of matrix A
 
 ---
 
 Example
 
-A_1,1 A_1,2 A_1,3
+$A_{1,1}, A_{1,2}, A_{1,3}$
 
-A_2,1 A_2,2, A_2,3
+$A_{2,1}, A_{2,2}, A_{2,3}$
 
----
+$A_{3,1}, A_{3,2}, A_{3,3}$
 
 See e.g.
 
 https://en.wikipedia.org/wiki/Matrix_(mathematics)
-
 
 ---
 
@@ -324,9 +345,12 @@ Where <1,2> means go 1 unit right on the x-axis, then 2 units up.
 
 ---
 
-Our convention: start from the top left, first index for rows, second for columns
+Our convention: 
 
-Start with ZERO
+- start from the top left
+- first index for rows
+- second index for columns
+- Start with ZERO
 
 This is a nice convention because it maps to how we loop through a matrix X, say:
 1 2
@@ -343,6 +367,8 @@ for row in range(len(X)):
 
 ---
 
+## Write the indices!
+
 Just like string indexing problems, if you're worried about making a mistake on paper questions
 just write the indicies!
 
@@ -357,6 +383,8 @@ A =
 ```
 
 ---
+
+## Learn these conventions, but prepare for others
 
 But ultimately, we are just somewhat-arbitrarily choosing to say
 
@@ -391,18 +419,11 @@ How to get width?
   - `image[0][0], image[0][1]`
 - Then, try editing one of  individual values
 
----
-
-## Using cmpt120image.py and pygame
-
-Ok, time to import an existing image.
-
-- Download cmpt120image.py
-  - Try: `pip3 install pygame`
-- Create a new script
 
 
 ---
+
+## Starter code for green screen
 
 In your new script, here's our starting code:
 

@@ -500,7 +500,7 @@ def is_green(r,g,b):
       b - the blue value (0-255)
     return True or False
     """"
-    return r < 30 and g > 255 and b < 30
+    return r < 30 and g > 225 and b < 30
 ```
 
 ---

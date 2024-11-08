@@ -10,8 +10,7 @@ def init():
     pygame.init()
     SCREENWIDTH = 800
     SCREENHEIGHT = 800
-    RED = (255,0,0)
-    screen = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
+    _ = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 
 def get_image(filename):
     """
@@ -36,7 +35,7 @@ def save_image(pixels, filename):
     pygame.surfarray.blit_array(surf, nparray)
     pygame.image.save(surf, filename)
 
-def show_image(pixels,title):
+def show_image(pixels, title):
     """
     Input:  pixels - 3d list of list of RGB values (a height-by-width-by-3 list)
     Output: show the image in a window

@@ -33,6 +33,15 @@ DRAFT
 
 ---
 
+# Housekeeping
+
+- Let's look at Project Canvas page together
+- ETA on midterm adjustments and final exam details
+- 
+
+
+---
+
 ## Recursion
 
 Recursion: functions that call themselves
@@ -92,3 +101,28 @@ What happens if we call the recursive function moving AWAY from the base case?
 ---
 
 
+## Recursive Vortex
+
+```python
+import turtle
+pete = turtle.Turtle()
+
+# recursive function!
+def vortex(size):
+    if size <= 20:
+        pete.left(90)
+        pete.forward(20)
+        pete.dot(20)
+    else:
+        pete.circle(size)
+        vortex(size * 0.75)
+
+# top level
+vortex(120)
+```
+
+---
+
+Which is the base case?
+
+Which is the recursive call?

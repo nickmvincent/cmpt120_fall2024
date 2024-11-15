@@ -853,17 +853,22 @@ A copy takes extra space, but we can edit them separately
 
 ---
 
-Some random examples of slight memory efficiencies we can achieve
+## One concrete thing to know: Append is slightly more efficient than list concat
 
-- Use append over list concatentation
+List concat makes a copy under the hood, uses up more of our "memory buckets"
+
+List .append is a bit more efficient
+
 
 ---
 
-## Lists are passed by reference
+## Another concrete thing to know (classic Python interview gotcha!): Lists (and mutable objects) are passed by reference
 
 Important Python fact: lists are passed by references
 
-Most variables are not!
+So are dicts and other "mutable objects". For purposes of 120, lists are our main mutable object right now.
+
+Most variables (immutables like int, float, string) are not passed by reference, they are passed by assignment!
 
 ---
 
@@ -877,7 +882,7 @@ If you do not wish to change the original image, create a new image using get_bl
 
 ---
 
-Some 2 cents
+## Some 2 cents
 
 - Sometimes efficiency is key (some CMPT classes, some coding interviews)
 - But sometimes readability / convenience is key!
@@ -888,6 +893,8 @@ I use list concatenation sometimes when it's not optimal in my personal research
 But I might be a bit more thoughtful if I know my code will be run "in prod"
 
 ---
+
+## More 2 cents
 
 In general, this stuff isn’t a common issue in Python – you can often not think about references and get away with it.
 
@@ -900,3 +907,24 @@ When it matters, it can matter a lot – so knowing how to identify, test for, a
 In other CMPT courses, you’ll use languages like C++ that are much more ”explicit” about memory
 
 
+---
+
+## One Slide Summary
+
+Aliases
+- Variables can refer to the same object.
+- Example: `a = [1, 2, 3]; b = a`
+- Changing b affects a, since both are aliases of the same list.
+
+Copies
+
+- Shallow Copy: new_list = old_list.copy() or new_list = old_list[:]
+  - Creates a new object but doesn’t copy nested objects.
+- Deep Copy: import copy; new_list = copy.deepcopy(old_list)
+  - Copies all nested objects, creating a completely independent clone.
+
+Pass by Reference
+
+- Python uses "pass-by-assignment."
+- Immutable types (e.g., int, str) are effectively copied when passed.
+- Mutable types (e.g., list, dict) allow in-place modifications, but reassigning inside a function only affects local scope.

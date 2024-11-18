@@ -9,9 +9,11 @@ Readings:
 - [9.6](https://runestone.academy/ns/books/published/thinkcspy/Strings/Length.html) (covers `len`)
 - [9.7](https://runestone.academy/ns/books/published/thinkcspy/Strings/StringsareImmutable.html) (covers immutability of strings)
 - [9.11](https://runestone.academy/ns/books/published/thinkcspy/Strings/TraversalandtheforLoopByIndex.html) (covers loops by index)
-- Chapter 1 from Gaddis, Introduction to Computers and Programming (bits and bytes)
+- Chapter 1 from Gaddis, Introduction to Computers and Programming (covers bits and bytes)
 
-Learning outcomes:
+
+<details>
+<summary> Week 7 Learning outcomes </summary>
 
 - know `len`, know that strings are immutable, use loops by index
 - Know what a bit represents in a computer
@@ -23,6 +25,7 @@ Learning outcomes:
 - Know relationship of Unicode to ASCII
 - Know how to store RGB numbers (3 byte aka 24 bits aka 6 hexadecimal digits)
 
+</details>
 
 ## Week 8
 
@@ -50,7 +53,8 @@ These may extend into Week 9 (the Week 9 reading list is much shorter).
   - Optional video suggestion: watch the second half of this [video](https://www.youtube.com/watch?v=6iF8Xb7Z3wQ)
 
 
-### Week 8 Learning outcomes:
+<details>
+<summary> Week 8 Learning outcomes </summary>
 
 - Able to use the Turtle package to create drawings (see methods below)
 - Able to read and understand basic Turtle code to visualize its output
@@ -61,8 +65,6 @@ These may extend into Week 9 (the Week 9 reading list is much shorter).
 - Able to color the turtle using turtle color names
 - Able to color the turtle using color coded with RGB values as a 3-tuple with values for (red,green,blue)
 - Able to identify the scope of a variable, especially in relation to function scope
-
-### Week 8 Code Snippets
 
 ```python
 # turtle methods
@@ -91,6 +93,8 @@ for i in range(...):
       myfunction(i*2,i)
 ```
 
+</details>
+
 ## Week 9 (Oct 28)
 
 ### Week 9 Readings
@@ -103,7 +107,8 @@ for i in range(...):
   - Read [5.1](https://runestone.academy/ns/books/published/thinkcspy/PythonModules/modules.html) for explanation on Python modules. Note: We'll review the "need-to-know" modules in class.
 
 
-### Week 9 Learning Outcomes:
+<details>
+<summary> Week 9 Learning outcomes </summary>
 
 - Functions!
   - Able to create and use functions that return values ()
@@ -117,8 +122,6 @@ for i in range(...):
   - Able to create a valid while loop with multiple control variables
   - Able to use a while loop to validate user input
 
-### Week 9 Code Snippets
-
 ```python
 
 def multiplier_100(a):
@@ -126,12 +129,12 @@ def multiplier_100(a):
 
 receive = multiplier_100(5)
 
-
 i = 0
 while i <10:
     i+=1
     # do something with i
 ```
+</details>
 
 ## Week 10 (Nov 4)
 
@@ -148,7 +151,8 @@ while i <10:
   - [10.8](https://runestone.academy/ns/books/published/thinkcspy/Lists/ListsareMutable.html). Lists are mutable.
   - [10.24](https://runestone.academy/ns/books/published/thinkcspy/Lists/NestedLists.html). Nested lists.
 
-### Week 10 Learning Outcomes
+<details>
+<summary> Week 10 Learning outcomes </summary>
 
 You should know:
 
@@ -167,9 +171,6 @@ You should know:
   - How to read, show and save images using the 3Dlist representing an image as provided in the cmpt120images module 
   - How to extract and/or change the color as RGB and/or individual color components of a pixel using a 3DList representing an image as provided in the cmpt120images module
 
-
-### Week 10 Code Snippets
-
 ```
 def my_func(a,b):
   return a < b
@@ -183,6 +184,7 @@ import cmpt120images
 import my_custom_module
 ```
 
+</details>
 
 ## Week 11 (Nov 11)
 
@@ -204,7 +206,8 @@ Optional readings (suggested to help with future CMPT courses):
 - [10.13](https://runestone.academy/runestone/books/published/thinkcspy/Lists/RepetitionandReferences.html)
 
 
-### Week 11 Learning Outcomes
+<details>
+<summary> Week 11 Learning outcomes </summary>
 
 - Alias vs. copy, lists and functions, mutability of lists
   - Knows what a list alias is, versus a copy
@@ -222,28 +225,20 @@ Optional readings (suggested to help with future CMPT courses):
   - Able to write code that can reverse a string using recursion 
   - Able to write a recursive or iterative function to check if a string is a palindrome
 
-### Week 11 Code Snippets
-
 ```
-
-
 mylist = [1,2,3]
 mylistalias = mylist
 mylist.append(4)
 # mylist and mylistalias now have 4 elements
 
----
 def changes_list(alist):
   alist[0] = 1
 
 origlist = ["a","b","c"]
 changes_list(origlist)
 # origlist is now changed
-
----
 ```
-
-
+</details>
 
 ## Week 12 (Nov 18)
 
@@ -259,14 +254,10 @@ We'll also go back to Chapter 6 and read:
 - [6.4](https://runestone.academy/ns/books/published/pythonds/SortSearch/TheBinarySearch.html)
 
 
+<details>
+<summary> Week 12 Learning outcomes </summary>
 
-
-### Week 12 Learning Outcomes
-
-- More recursion
-  - Able to write code that can produce the sum of a list using recursion
-  - Able to write code that can reverse a string using recursion 
-  - Able to write a recursive or iterative function to check if a string is a palindrome
+(Spend more time on recursion learning outcomes this week)
 
 - Search!
   - Able to write a linear search function with various return types (Boolean using for/while, index of unique found element, indices of all found elements)
@@ -274,6 +265,8 @@ We'll also go back to Chapter 6 and read:
   - Able to produce the code for a recursive binary search
 
 Code snippets are getting longer. See lecture slides.
+
+</details>
 
 ## Week 13
 
@@ -283,12 +276,13 @@ Code snippets are getting longer. See lecture slides.
 - [6.8](https://runestone.academy/ns/books/published/pythonds/SortSearch/TheSelectionSort.html)
 - [6.11](https://runestone.academy/ns/books/published/pythonds/SortSearch/TheMergeSort.html)
 
-Now we'll once again go back in Chapter numbers a bit to get some of the theory of motivation for algorithm analysis
+Now we'll once again go back in Chapters a bit to get some of the theory of motivation for algorithm analysis
 - [3.2](https://runestone.academy/ns/books/published/pythonds/AlgorithmAnalysis/WhatIsAlgorithmAnalysis.html)
 - [3.3](https://runestone.academy/ns/books/published/pythonds/AlgorithmAnalysis/BigONotation.html)
 
 
-### Week 13 Learning Outcomes
+<details>
+<summary> Week 13 Learning outcomes </summary>
 
 
 - Swap different elements in a list
@@ -310,6 +304,8 @@ Now we'll once again go back in Chapter numbers a bit to get some of the theory 
 - Analyze the time complexity of binary search and compare its use over linear search
 - Give the complexity of Merge Sort
 - Write code to merge two ordered lists 
+
+</details>
 
 That's it! We did hit a lot of learning outcomes. We'll review them all in the final week.
 

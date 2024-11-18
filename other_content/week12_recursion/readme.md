@@ -6,7 +6,7 @@ We'll spend some time trying to code key recursive functions. Then, we'll live c
 
 ## Exercise 1: Review tree drawing
 
-Take a look at `draw_tree.py`
+Take a look at `draw_tree.py`.
 
 
 ## Exercise 2: Recursive Factorial
@@ -63,7 +63,7 @@ Example:
 <summary>Solution</summary>
 
 ```python
-def recursive_sum(n: int) -> int:
+def recursive_sum(n):
     if n == 0:  # Base case
         return 0
     else:
@@ -99,7 +99,7 @@ Example: `recursive_reverse("hello")  # Output: "olleh"`
 <summary>Solution</summary>
 
 ```python
-def recursive_reverse(s: str) -> str:
+def recursive_reverse(s):
     if len(s) <= 1:  # Base case
         return s
     else:
@@ -143,7 +143,7 @@ To check the substring between the first and last character, you can use the ind
 <summary>Solution</summary>
 
 ```python
-def is_palindrome(s: str) -> bool:
+def is_palindrome(s):
     if len(s) <= 1:  # Base case
         return True
     elif s[0] == s[-1]:  # Recursive case

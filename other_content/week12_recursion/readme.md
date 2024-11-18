@@ -26,14 +26,12 @@ Start with a single parameter function definition:
 `def factorial(num):`
 
 
+<details>
 <summary>Hint 1: Base Case</summary>
-
 The base case will be based on the definition that factorial(0) = 1.
-
 </details>
 
 <details>
-
 <summary>Hint 2: Recursive Case</summary>
 
 In order to move towards the base case, consider decrementing the variable being passed by argument by 1
@@ -54,12 +52,15 @@ Start with a single parameter function definition:
 Example: 
 `recursive_sum(5)  # Output: 15 (1 + 2 + 3 + 4 + 5)`
 
-<details> <summary>Hint 1: Base Case</summary> The base case occurs when `n` is 0. The sum of all integers up to 0 is simply 0. </details>
+<details>
+<summary>Hint 1: Base Case</summary> The base case occurs when `n` is 0. The sum of all integers up to 0 is simply 0. </details>
 
-<details> <summary>Hint 2: Recursive Case</summary> If `n` is greater than 0, return `n` plus the result of `recursive_sum(n - 1)`. </details>
+<details>
+<summary>Hint 2: Recursive Case</summary> If `n` is greater than 0, return `n` plus the result of `recursive_sum(n - 1)`. </details>
 
 
-<details> <summary>Solution</summary>
+<details>
+<summary>Solution</summary>
 
 ```python
 def recursive_sum(n: int) -> int:
@@ -71,7 +72,6 @@ def recursive_sum(n: int) -> int:
 # Example usage:
 print(recursive_sum(5))  # Output: 15
 ```
-
 </details>
 
 
@@ -86,13 +86,17 @@ Start with a single parameter function definition:
 
 Example: `recursive_reverse("hello")  # Output: "olleh"`
 
-<details> <summary>Hint 1: Base Case</summary> The base case is an empty string or a single-character string, which is its own reverse. </details>
+<details>
+<summary>Hint 1: Base Case</summary> The base case is an empty string or a single-character string, which is its own reverse. </details>
 
-<details> <summary>Hint 2: Recursive Case</summary> Return the last character of the string concatenated with the reverse of the rest of the string. </details>
+<details>
+<summary>Hint 2: Recursive Case</summary> Return the last character of the string concatenated with the reverse of the rest of the string. </details>
 
-<details> <summary>Hint 3</summary> To get the "rest of the string", we can use `s[:-1]`</details>
+<details>
+<summary>Hint 3</summary> To get the "rest of the string", we can use `s[:-1]`</details>
 
-<details> <summary>Solution</summary>
+<details>
+<summary>Solution</summary>
 
 ```python
 def recursive_reverse(s: str) -> str:
@@ -104,7 +108,6 @@ def recursive_reverse(s: str) -> str:
 # Example usage:
 print(recursive_reverse("hello"))  # Output: "olleh"
 ```
-
 </details>
 
 ## Exercise 5: Palindrome checker
@@ -122,15 +125,22 @@ Examples:
 `is_palindrome("hello")    # Output: False`
 
 
-<details> <summary>Hint 1: Base Case</summary>
-The base case is when the string is empty or has a length of 1; both cases are palindromes by definition. </details> <details>
+<details>
+<summary>Hint 1: Base Case</summary>
+The base case is when the string is empty or has a length of 1; both cases are palindromes by definition.
+</details>
 
-<summary>Hint 2: Recursive Case</summary> If the first and last characters are the same, check if the substring between them is a palindrome by calling `is_palindrome` recursively. </details>
+<details>
+<summary>Hint 2: Recursive Case</summary> If the first and last characters are the same, check if the substring between them is a palindrome by calling `is_palindrome` recursively.
+</details>
 
-<summary>Hint 3</summary> To check the substring between the first and last character, you can use the indexing approach `s[1:-1]` </details>
+<details>
+<summary>Hint 3: String Indexing</summary>
+To check the substring between the first and last character, you can use the indexing approach `s[1:-1]` </details>
 
 
-<details> <summary>Solution</summary>
+<details>
+<summary>Solution</summary>
 
 ```python
 def is_palindrome(s: str) -> bool:
@@ -145,5 +155,4 @@ def is_palindrome(s: str) -> bool:
 print(is_palindrome("racecar"))  # Output: True
 print(is_palindrome("hello"))    # Output: False
 ```
-
 </details>

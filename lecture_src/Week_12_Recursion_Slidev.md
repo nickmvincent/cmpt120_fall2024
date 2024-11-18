@@ -1,8 +1,14 @@
-# Readme for Week 12 Recursion
+
+# Week 12 Recursion
 
 This folder includes some interactive content we'll work through together during Week 12!
 
-We'll spend some time trying to code key recursive functions. Then, we'll live code them together.
+We'll spend some time trying to code key recursive functions and live code them together.
+
+This deck has the SAME content as the readme file in `other_content/week12_recursion`. I will recommend you open that file during lecture, and I'll project this just for slightly better lecture viewing experience.
+
+
+---
 
 ## Exercise 1: Review tree drawing
 
@@ -11,6 +17,8 @@ First, take a look at `draw_tree.py` in this directory. We're going to talk thro
 1. Has even more branches
 2. Has fewer branches
 3. Hits the base case immediately
+
+---
 
 
 ## Exercise 2: Recursive Factorial
@@ -39,6 +47,8 @@ In order to move towards the base case, consider decrementing the variable being
 (e.g., somewhere in your code call, `factorial(num-1)`)
 </details>
 
+---
+
 <details>
 <summary> Solution</summary>
 
@@ -54,6 +64,8 @@ print(factorial(5))  # Output: 120
 ```
 </details>
 
+
+--- 
 
 ## Exercise 3: Sums with recursion
 
@@ -72,6 +84,7 @@ Examples:
 <details>
 <summary>Hint 2: Recursive Case</summary> If `n` is greater than 0, return `n` plus the result of `recursive_sum(n - 1)`. </details>
 
+---
 
 <details>
 <summary>Solution</summary>
@@ -89,6 +102,8 @@ print(recursive_sum(5))  # Output: 15
 </details>
 
 
+---
+
 ### Exercise 3b: Summing all integers in a list
 Problem: Write a recursive function in Python, recursive_sum_list, that calculates the sum of all integers in a given list.
 
@@ -103,7 +118,12 @@ Examples:
 <summary>Hint 2: Recursive Case</summary> If the list is not empty, return the first element of the list plus the result of `recursive_sum_list` called on the rest of the list. </details>
 
 <details>
-<summary>Hint 3: List Indexing</summary>To get the first element of the list, use `numbers[0`]. The get the "rest of the list", use `numbers[1:]`</details>
+
+<summary>Hint 3: List Indexing</summary>To get the first element of the list, use `numbers[0`]. The get the "rest of the list", use `numbers[1:]`.
+
+</details>
+
+---
 
 <details>
 <summary>Solution</summary>
@@ -121,6 +141,8 @@ print(recursive_sum_list([1, 2, 3, 4]))  # Output: 10
 
 </details>
 
+---
+
 ## Exercise 4: Reverse a string
 
 Write a recursive function in Python, recursive_reverse, that reverses a given string. Start with a single parameter function definition: `def recursive_reverse(s):`
@@ -130,14 +152,20 @@ Example:
 - `recursive_reverse("abc")  # Output: "cba"`
 
 <details>
-<summary>Hint 1: Base Case</summary> The base case is an empty string or a single-character string, which is its own reverse. </details>
+<summary>Hint 1: Base Case</summary> The base case is an empty string or a single-character string, which is its own reverse.
+</details>
 
 <details>
-<summary>Hint 2: Recursive Case</summary> Return the last character of the string concatenated with the reverse of the rest of the string. </details>
+<summary>Hint 2: Recursive Case</summary> Return the last character of the string concatenated with the reverse of the rest of the string.
+</details>
 
 
 <details>
-<summary>Hint 3: String Indexing</summary>. To get the last character of the string, we can use `s[-1]`. To get the "rest of the string", we can use `s[:-1]`</details>
+<summary>Hint 3: String Indexing</summary>. To get the last character of the string, we can use `s[-1]`. To get the "rest of the string", we can use `s[:-1]`.
+
+</details>
+
+---
 
 <details>
 <summary>Solution</summary>
@@ -153,6 +181,8 @@ def recursive_reverse(s):
 print(recursive_reverse("hello"))  # Output: "olleh"
 ```
 </details>
+
+---
 
 ## Exercise 5: Palindrome checker
 
@@ -178,6 +208,8 @@ The base case is when the string is empty or has a length of 1; both cases are p
 To check the substring between the first and last character, you can use the indexing approach `s[1:-1]` </details>
 
 
+---
+
 <details>
 <summary>Solution</summary>
 
@@ -195,6 +227,9 @@ print(is_palindrome("racecar"))  # Output: True
 print(is_palindrome("hello"))    # Output: False
 ```
 </details>
+
+
+---
 
 ## Exercise 6: Challenge!
 
@@ -215,6 +250,8 @@ Examples:
 
 <details> <summary>Hint 2: Recursive Case</summary> If the current item is a list, loop through each element in the list and recursively apply `nested_sum` on each element, summing the results. </details>
 
+
+---
 
 <details><summary>Solution</summary>
 
@@ -237,6 +274,8 @@ print(nested_sum([1, [2, [3, [4, [5]]]]]))    # Output: 15
 </details>
 
 
+---
+
 ## Exercise 7: Count Vowels in a String
 
 Problem: Write a recursive function, count_vowels, that counts the number of vowels (a, e, i, o, u) in a given string. The function should be case-insensitive, so both uppercase and lowercase vowels are counted.
@@ -252,7 +291,12 @@ Examples:
 
 <details> <summary>Hint 1: Base Case</summary> The base case occurs when the string is empty. If it is, return 0 because there are no vowels in an empty string. </details>
 
-<details> <summary>Hint 2: Recursive Case</summary> Check if the first character of the string is a vowel. If it is, add 1 to the count, and then call the function recursively on the rest of the string. </details> <details> <summary>Solution</summary>
+<details> <summary>Hint 2: Recursive Case</summary> Check if the first character of the string is a vowel. If it is, add 1 to the count, and then call the function recursively on the rest of the string. </details>
+
+
+---
+
+<details> <summary>Solution</summary>
 
 ```python
 def count_vowels(s):

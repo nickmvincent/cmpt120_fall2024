@@ -6,51 +6,65 @@ We'll spend some time trying to code key recursive functions. Then, we'll live c
 
 ## Exercise 1: Review tree drawing
 
-Take a look at `draw_tree.py`.
+First, take a look at `draw_tree.py` in this directory. We're going to talk through how and way this code works. You should copy and paste this into a file on your local machine. Trying running it, then try modifying the *initial function call* so that the tree:
+
+1. Has even more branches
+2. Has fewer branches
+3. Hits the base case immediately
 
 
 ## Exercise 2: Recursive Factorial
 
-Write a recursive function that returns the factorial of a number.
+Probem: Write a recursive function that returns the factorial of a number. The factorial of n is equal to n times the factorial of n-1.
 
-The factorial of n is equal to n times the factorial of n-1.
+Start with a single parameter function definition: `def factorial(num):`
 
-For instance 3! = 3 * 2 * 1
-
-and 4! = 4 * 3 * 2 * 1 = 4 * 3!
-
-Important: the factorial of 0 is equal to 1.
-
-Start with a single parameter function definition:
-
-`def factorial(num):`
-
+Examples:
+- 0! = 0 (important: the factorial of 0 is equal to 1.)
+- 1! = 1
+- 2! = 2 * 1= 2 * 1!
+- 3! = 3 * 2 * 1 = 3 * 2!
+- so, `factorial(4) # -> 24`
 
 <details>
 <summary>Hint 1: Base Case</summary>
-The base case will be based on the definition that factorial(0) = 1.
+The base case will be based on the definition that factorial(0) = 1. If occurs when `num` is 0.
 </details>
 
 <details>
 <summary>Hint 2: Recursive Case</summary>
 
-In order to move towards the base case, consider decrementing the variable being passed by argument by 1
+In order to move towards the base case, consider decrementing the variable being passed by argument (`num`) by 1.
 
-(e.g., somewhere in your code call, `factorial(num-1)`
+(e.g., somewhere in your code call, `factorial(num-1)`)
+</details>
 
+<details>
+<summary> Solution</summary>
+
+```python
+def factorial(n):
+    if n == 0:  # Base case
+        return 1
+    else:
+        return n * factorial(n - 1)  # Recursive case
+
+# Example usage:
+print(factorial(5))  # Output: 120
+```
 </details>
 
 
 ## Exercise 3: Sums with recursion
 
+### Exercise 3a: Summing all integers from 1 to n
 Write a recursive function in Python, recursive_sum, that calculates the sum of all integers from 1 up to a given positive integer n.
 
-Start with a single parameter function definition:
+Start with a single parameter function definition:`def recursive_sum(num):`
 
-`def recursive_sum(num):`
- 
-Example: 
-`recursive_sum(5)  # Output: 15 (1 + 2 + 3 + 4 + 5)`
+Examples: 
+- `recursive_sum(4)  # Output: 9 (1 + 2 + 3 + 4)`
+- `recursive_sum(5)  # Output: 15 (1 + 2 + 3 + 4 + 5)`
 
 <details>
 <summary>Hint 1: Base Case</summary> The base case occurs when `n` is 0. The sum of all integers up to 0 is simply 0. </details>
@@ -75,6 +89,32 @@ print(recursive_sum(5))  # Output: 15
 </details>
 
 
+### Exercise 3b: Summing all integers in a list
+Problem: Write a recursive function in Python, recursive_sum_list, that calculates the sum of all integers in a given list.
+
+Start with a single parameter function definition: `def recursive_sum_list(numbers):`
+
+Examples:
+- `recursive_sum_list([1, 2, 3, 4]) # Output: 10`
+- `recursive_sum_list([5, 7, 3]) # Output: 15`
+
+<details> <summary>Hint 1: Base Case</summary> The base case occurs when the list is empty. The sum of an empty list is simply 0. </details> <details> <summary>Hint 2: Recursive Case</summary> If the list is not empty, return the first element of the list plus the result of `recursive_sum_list` called on the rest of the list. </details>
+
+<details>
+<summary>Solution</summary>
+
+```python
+def recursive_sum_list(numbers):
+    if not numbers:  # Base case
+        return 0
+    else:
+        return numbers[0] + recursive_sum_list(numbers[1:])  # Recursive case
+
+# Example usage:
+print(recursive_sum_list([1, 2, 3, 4]))  # Output: 10
+```
+
+</details>
 
 ## Exercise 4: Reverse a string
 

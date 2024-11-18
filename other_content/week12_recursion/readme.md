@@ -191,12 +191,16 @@ The base case is when the string is empty or has a length of 1; both cases are p
 </details>
 
 <details>
-<summary>Hint 2: Recursive Case</summary> If the first and last characters are the same, check if the substring between them is a palindrome by calling `is_palindrome` recursively.
+<summary>Hint 2: Recursive Case</summary>
+
+If the first and last characters are the same, check if the substring between them is a palindrome by calling `is_palindrome` recursively.
 </details>
 
 <details>
 <summary>Hint 3: String Indexing</summary>
-To check the substring between the first and last character, you can use the indexing approach `s[1:-1]` </details>
+
+To check the substring between the first and last character, you can use the indexing approach `s[1:-1]`
+</details>
 
 
 <details>
@@ -234,7 +238,9 @@ Examples:
 
 <details> <summary>Hint 1: Base Case</summary> The base case is when the current item is an integer, in which case you can return the integer itself. </details>
 
-<details> <summary>Hint 2: Recursive Case</summary> If the current item is a list, loop through each element in the list and recursively apply `nested_sum` on each element, summing the results. </details>
+<details> <summary>Hint 2: Recursive Case</summary>
+
+If the current item is a list, loop through each element in the list and recursively apply `nested_sum` on each element, summing the results. </details>
 
 
 <details><summary>Solution</summary>
@@ -262,14 +268,12 @@ print(nested_sum([1, [2, [3, [4, [5]]]]]))    # Output: 15
 
 Problem: Write a recursive function, count_vowels, that counts the number of vowels (a, e, i, o, u) in a given string. The function should be case-insensitive, so both uppercase and lowercase vowels are counted.
 
-Start with a single parameter function definition:
-
-def count_vowels(s):
+Start with a single parameter function definition: `def count_vowels(s):`
 
 Examples:
-- count_vowels("hello") # Output: 2
-- count_vowels("Recursion is fun!") # Output: 6
-- count_vowels("xyz") # Output: 0
+- `count_vowels("hello") # Output: 2`
+- `count_vowels("Recursion is fun!") # Output: 6`
+- `count_vowels("xyz") # Output: 0`
 
 <details> <summary>Hint 1: Base Case</summary> The base case occurs when the string is empty. If it is, return 0 because there are no vowels in an empty string. </details>
 

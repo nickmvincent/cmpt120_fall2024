@@ -17,7 +17,7 @@ First, take a look at `draw_tree.py` in this directory. We're going to talk thro
 
 Probem: Write a recursive function that returns the factorial of a number. The factorial of n is equal to n times the factorial of n-1.
 
-Start with a single parameter function definition: `def factorial(num):`
+Start with a single parameter function definition: `def factorial(n):`
 
 Examples:
 - 0! = 0 (important: the factorial of 0 is equal to 1.)
@@ -28,15 +28,17 @@ Examples:
 
 <details>
 <summary>Hint 1: Base Case</summary>
-The base case will be based on the definition that factorial(0) = 1. If occurs when `num` is 0.
+
+The base case will be based on the definition that factorial(0) = 1. If occurs when `n` is 0.
+
 </details>
 
 <details>
 <summary>Hint 2: Recursive Case</summary>
 
-In order to move towards the base case, consider decrementing the variable being passed by argument (`num`) by 1.
+In order to move towards the base case, consider decrementing the variable being passed by argument (`n`) by 1.
 
-(e.g., somewhere in your code call, `factorial(num-1)`)
+(e.g., somewhere in your code call, `factorial(n-1)`)
 </details>
 
 <details>
@@ -48,7 +50,6 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)  # Recursive case
-
 # Example usage:
 print(factorial(5))  # Output: 120
 ```
@@ -60,17 +61,25 @@ print(factorial(5))  # Output: 120
 ### Exercise 3a: Summing all integers from 1 to n
 Write a recursive function in Python, recursive_sum, that calculates the sum of all integers from 1 up to a given positive integer n.
 
-Start with a single parameter function definition:`def recursive_sum(num):`
+Start with a single parameter function definition:`def recursive_sum(n):`
 
 Examples: 
 - `recursive_sum(4)  # Output: 9 (1 + 2 + 3 + 4)`
 - `recursive_sum(5)  # Output: 15 (1 + 2 + 3 + 4 + 5)`
 
 <details>
-<summary>Hint 1: Base Case</summary> The base case occurs when `n` is 0. The sum of all integers up to 0 is simply 0. </details>
+<summary>Hint 1: Base Case</summary>
+
+The base case occurs when `n` is 0. The sum of all integers up to 0 is simply 0.
+
+</details>
 
 <details>
-<summary>Hint 2: Recursive Case</summary> If `n` is greater than 0, return `n` plus the result of `recursive_sum(n - 1)`. </details>
+<summary>Hint 2: Recursive Case</summary>
+
+If `n` is greater than 0, return `n` plus the result of `recursive_sum(n - 1)`.
+
+</details>
 
 
 <details>
@@ -100,10 +109,18 @@ Examples:
 
 <details> <summary>Hint 1: Base Case</summary> The base case occurs when the list is empty. The sum of an empty list is simply 0. </details> <details>
 
-<summary>Hint 2: Recursive Case</summary> If the list is not empty, return the first element of the list plus the result of `recursive_sum_list` called on the rest of the list. </details>
+<summary>Hint 2: Recursive Case</summary>
+
+If the list is not empty, return the first element of the list plus the result of `recursive_sum_list` called on the rest of the list.
+
+</details>
 
 <details>
-<summary>Hint 3: List Indexing</summary>To get the first element of the list, use `numbers[0`]. The get the "rest of the list", use `numbers[1:]`</details>
+<summary>Hint 3: List Indexing</summary>
+
+To get the first element of the list, use `numbers[0]`. The get the "rest of the list", use `numbers[1:]
+
+</details>
 
 <details>
 <summary>Solution</summary>
@@ -137,7 +154,11 @@ Example:
 
 
 <details>
-<summary>Hint 3: String Indexing</summary>. To get the last character of the string, we can use `s[-1]`. To get the "rest of the string", we can use `s[:-1]`</details>
+<summary>Hint 3: String Indexing</summary>
+
+To get the last character of the string, we can use `s[-1]`. To get the "rest of the string", we can use `s[:-1]`
+
+</details>
 
 <details>
 <summary>Solution</summary>

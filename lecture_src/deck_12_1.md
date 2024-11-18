@@ -293,7 +293,6 @@ Examples:
 
 <details> <summary>Hint 2: Recursive Case</summary> Check if the first character of the string is a vowel. If it is, add 1 to the count, and then call the function recursively on the rest of the string. </details>
 
-
 ---
 
 <details> <summary>Solution</summary>

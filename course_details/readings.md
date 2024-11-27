@@ -1,6 +1,192 @@
 # CMPT 120 Readings Guide
 
-For pre-midterm readings and learning outcomes, see Canvas Learning Outcomes / Readings entries and the pre-midterm slide deck.
+
+## Week 1 
+
+Readings:
+
+* 1.1.[ The way of the program](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/intro-TheWayoftheProgram.html)
+* 1.2[ Algorithms](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/Algorithms.html)
+* 1.3[ The Python Programming Language](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/ThePythonProgrammingLanguage.html)
+* 1.4[ Executing Python in Runestone Textbook](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/SpecialWaystoExecutePythoninthisBook.html)
+* 1.5[ More about programs](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/MoreAboutPrograms.html)
+* 1.11[ Formal and Natural Languages](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/FormalandNaturalLanguages.html)
+* 1.12[ A Typical First Program](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/ATypicalFirstProgram.html)
+* 1.13[ Comments](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/Comments.html)
+
+<details>
+<summary> Week 1 Learning Outcomes </summary>
+
+1. Know that CS is problem solving
+2. Understand problem solving by subdividing tasks into subtasks
+3. Able to explain the main characteristics of an algorithm
+4. Understand plagiarism for programming and this course
+5. Know what pseudocode is
+6. Able to write Python comments
+7. Know what information is in a program header block (i.e. initial comments with author, date and purpose)
+8. Able to output a "Hello World" using print()
+9. Able to contrast programming languages with natural languages
+10. Able to work with IDLE and an IDE
+11. Able to submit code in a .zip or .py file
+</details>
+
+## Week 2
+
+Readings:
+
+* 2.1[ Variables, Expressions and Statements](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/intro-VariablesExpressionsandStatements.html)
+* 2.2[ Values and Data Types](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/ValuesandDataTypes.html)
+* 2.4[ Variables ](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/Variables.html)
+* 2.5[ Variable names and keyword](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/VariableNamesandKeywords.html)
+* 2.6[ Statements and expressions](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/StatementsandExpressions.html)
+* 2.7[ Operators and operands](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/OperatorsandOperands.html)
+* 2.8[ Input](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/Input.html)
+* 2.10[ Reassignment](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/Reassignment.html)
+* 5.1[ Modules](https://runestone.academy/runestone/books/published/thinkcspy/PythonModules/modules.html)
+* 7.1[ Boolean values and expressions](https://runestone.academy/runestone/books/published/thinkcspy/Selection/BooleanValuesandBooleanExpressions.html)
+* 7.2[ Logical Operators](https://runestone.academy/runestone/books/published/thinkcspy/Selection/Logicaloperators.html)
+* 7.4[ Conditional execution: Binary Selection](https://runestone.academy/runestone/books/published/thinkcspy/Selection/ConditionalExecutionBinarySelection.html)
+* 7.5[ Omitting the else clause: Unary selection](https://runestone.academy/runestone/books/published/thinkcspy/Selection/OmittingtheelseClauseUnarySelection.html)
+* 9.3[ Concatenation](https://runestone.academy/runestone/books/published/thinkcspy/Strings/OperationsonStrings.html)
+* 10.2[ List values](https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListValues.html)
+
+<details>
+<summary> Week 2 Learning Outcomes </summary>
+
+1. Able to design/plan an algorithm, e.g. using comments or pseudocode
+2. Able to apply some common problem solving strategies, such as breaking down the problem into smaller pieces
+3. Able to obtain input into Python from the terminal to a variable 
+4. Able to receive input from terminal without saving it to a variable
+5. Know how to assign a value to a variable
+6. Able to output a string variable in a print statement
+7. Able to concatenate two strings
+8. Know the constraints and conventions on variable naming
+9. Know that there are different types of data, although String is the focus for now
+10. Able to create a list of strings and assign it to a variable
+11. Able to use the random.choice() function on a list (including import)
+12. Knows what the . after a module name does
+13. Understands that modules contain functions (light treatment)
+14. Know to put import statements at the top of the program, after header
+15. Knows how to use if/elif statements with ==
+16. Knows how to use the else clause
+17. Understands the meaning of logical operators and, or
+18. Knows about comparison operators and how to use in a conditional statement
+19. Understands what a Boolean expression is
+20. Understands the basics in combining Boolean expressions using `and` and `or`
+21. Is able to print a Boolean expression
+22. Knows some of the characteristics of good software: usable, pleasing to read, minimizes duplication, robust to errors
+23. Knows to include a short description of the program in the header
+24. Able to test a program for the desired outcome, interactively
+25. Able to test a program (lightly) for unexpected cases, interactively
+26. Knows how to test smaller pieces of code by commenting out blocks
+27. Knows the interpreter's role in catching errors
+
+</details>
+
+## Week 3
+
+Readings
+
+* 1.7 [Syntax Errors ](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/Syntaxerrors.html)
+* 1.8 [Runtime Errors](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/RuntimeErrors.html)
+* 1.9 [Semantic Errors ](https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/SemanticErrors.html)
+* 9.5 [String Methods](https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html)<span style="text-decoration:underline;"> </span>(except 9.5.1)
+* 9.13 [The in and not in operators](https://runestone.academy/runestone/books/published/thinkcspy/Strings/Theinandnotinoperators.html)
+* 10.5 [List Membership ](https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListMembership.html)
+* 4.4 [The for loop ](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/TheforLoop.html)
+* 4.5 [Flow of Execution of the for Loop ](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/FlowofExecutionoftheforLoop.html)
+* 4.7 [Range function](https://runestone.academy/runestone/books/published/thinkcspy/PythonTurtle/TherangeFunction.html) (except Turtle examples)
+* 2.2 [Values and Data Types ](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/ValuesandDataTypes.html)
+* 2.3[ Type conversion functions](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/Typeconversionfunctions.html)
+
+
+<details>
+<summary> Week 3 Learning Outcomes </summary>
+1. Can apply the strip, lower, and upper String methods appropriately
+2. Can identify the String data type
+3. Able to interactively test methods and inspect variables (using REPL in IDLE, IDE, online tool, etc.)
+4. Able to use the **in** keyword for both (1) string in a list and (2) character(s) in a string.
+5. Can create a list using variables (e.g. from user inputs)
+6. Can use a for to loop over elements of a list
+7. Understands the `range(...)` function and what it represents
+8. Knows the concept of the index variable in for i in range(...)
+9. Understands the Integer type
+10. Able to convert an Integer to a String
+11. Knows that concatenation is only applicable between 2 strings, not Int and String
+12. Is able to design and implement nested conditionals
+13. Understands the concept of robustness with respect to code
+14. Can identify whether an error is a syntax error or a semantic error
+15. Understands the concept of method chaining (applying to an object and sending output from one method to the method to its right, using the . operator)
+</details>
+
+## Week 4
+
+Readings
+
+* 2.3[ Type conversion functions (review)](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/Typeconversionfunctions.html)
+* 2.7 [Operators and Operands](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/OperatorsandOperands.html)
+* 2.9[ Order of Operations](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/OrderofOperations.html)<span style="text-decoration:underline;"> </span> 
+* 2.10[ Reassignment](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/Reassignment.html)
+* 2.11[ Updating variables](https://runestone.academy/runestone/books/published/thinkcspy/SimplePythonData/UpdatingVariables.html)
+* 6.5.1[ The Accumulation Pattern](https://runestone.academy/runestone/books/published/thinkcspy/Functions/TheAccumulatorPattern.html)
+* 9.5.1[ String Format Method](https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringMethods.html#string-format-method)
+* 10.3[ List Length](https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListLength.html)
+
+
+
+<details>
+<summary> Week 4 Learning Outcomes </summary>
+1. Can use the range function with arguments that are variables (not only numbers)
+2. Knows that a loop is a way to reduce duplication of code
+3. Able to use integers and floats and manipulate them in variables
+4. Knows how to initialize a variable of type Integer
+5. Can apply the accumulator pattern (including initialization) and += shortcut
+6. Able to get the length of a list
+7. Able to convert strings to integer type (esp. user input)
+8. Knows that division of integers converts type to float
+9. Able to perform arithmetic operations on numbers
+10. Can use the accumulator pattern with other arithmetic operators
+11. Can print floats to a given number of decimal places
+</details>
+
+## Week 5
+
+* 9.4[ Index Operator: Working with the Characters of a String](https://runestone.academy/runestone/books/published/thinkcspy/Strings/IndexOperatorWorkingwiththeCharactersofaString.html)
+* 9.7[ The Slice Operator](https://runestone.academy/runestone/books/published/thinkcspy/Strings/TheSliceOperator.html)
+* 9.8[ String Comparison](https://runestone.academy/runestone/books/published/thinkcspy/Strings/StringComparison.html)
+* 10.4[ Accessing Elements in a List](https://runestone.academy/runestone/books/published/thinkcspy/Lists/AccessingElements.html)
+* 10.6[ Concatenation and Repetition for Lists](https://runestone.academy/runestone/books/published/thinkcspy/Lists/ConcatenationandRepetition.html)
+* 10.7[ List Slices](https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListSlices.html)
+* 10.8[ Lists are Mutable](https://runestone.academy/runestone/books/published/thinkcspy/Lists/ListsareMutable.html)
+* 10.18[ Accumulation with Lists](https://runestone.academy/runestone/books/published/thinkcspy/Lists/TheAccumulatorPatternwithLists.html)
+* 11.1[ Working with Data Files](https://runestone.academy/runestone/books/published/thinkcspy/Files/intro-WorkingwithDataFiles.html)
+* 11.2[ Finding a File on your Disk](https://runestone.academy/runestone/books/published/thinkcspy/Files/FindingaFileonyourDisk.html)
+* 11.3[ Reading a File](https://runestone.academy/runestone/books/published/thinkcspy/Files/ReadingaFile.html)
+* 11.4[ Iterating Over Lines in a File](https://runestone.academy/runestone/books/published/thinkcspy/Files/Iteratingoverlinesinafile.html)
+
+<details>
+<summary> Week 5 Learning Outcomes </summary>
+
+1. Able to open and read lines from a text file
+2. Able to split a string into a list
+3. Able to access a specific element(s) of a list using indexing/slicing
+4. Able to access a specific character(s) in a string using indexing/slicing
+5. Able to perform comparisons between numbers, taking into account order of operators (operator precedence)
+6. Able to perform comparisons (e.g. !=, &lt;,>) with strings
+7. Can interpret code with nested conditionals with comparison operators (e.g. !=, &lt;,>=) and numbers
+8. Able to find the common elements between 2 lists
+9. Able to understand and use a nested for loop
+10. Able to apply operator precedence to evaluate expressions
+11. Able to concatenate lists
+12. Able to apply accumulation pattern for strings and lists (previously was numbers)
+13. Able to calculate the maximum or minimum
+14. Able to coordinate between 2 or more lists using a common  index
+
+</details>
+
+## Week 6
+
+Review, midterm prep.
 
 ## Week 7
 

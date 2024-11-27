@@ -1,3 +1,94 @@
+##  Week 1 Learning Outcomes 
+
+1. Know that CS is problem solving
+2. Understand problem solving by subdividing tasks into subtasks
+3. Able to explain the main characteristics of an algorithm
+4. Understand plagiarism for programming and this course
+5. Know what pseudocode is
+6. Able to write Python comments
+7. Know what information is in a program header block (i.e. initial comments with author, date and purpose)
+8. Able to output a "Hello World" using print()
+9. Able to contrast programming languages with natural languages
+10. Able to work with IDLE and an IDE
+11. Able to submit code in a .zip or .py file
+
+##  Week 2 Learning Outcomes 
+
+1. Able to design/plan an algorithm, e.g. using comments or pseudocode
+2. Able to apply some common problem solving strategies, such as breaking down the problem into smaller pieces
+3. Able to obtain input into Python from the terminal to a variable 
+4. Able to receive input from terminal without saving it to a variable
+5. Know how to assign a value to a variable
+6. Able to output a string variable in a print statement
+7. Able to concatenate two strings
+8. Know the constraints and conventions on variable naming
+9. Know that there are different types of data, although String is the focus for now
+10. Able to create a list of strings and assign it to a variable
+11. Able to use the random.choice() function on a list (including import)
+12. Knows what the . after a module name does
+13. Understands that modules contain functions (light treatment)
+14. Know to put import statements at the top of the program, after header
+15. Knows how to use if/elif statements with ==
+16. Knows how to use the else clause
+17. Understands the meaning of logical operators and, or
+18. Knows about comparison operators and how to use in a conditional statement
+19. Understands what a Boolean expression is
+20. Understands the basics in combining Boolean expressions using `and` and `or`
+21. Is able to print a Boolean expression
+22. Knows some of the characteristics of good software: usable, pleasing to read, minimizes duplication, robust to errors
+23. Knows to include a short description of the program in the header
+24. Able to test a program for the desired outcome, interactively
+25. Able to test a program (lightly) for unexpected cases, interactively
+26. Knows how to test smaller pieces of code by commenting out blocks
+27. Knows the interpreter's role in catching errors
+
+##  Week 3 Learning Outcomes 
+1. Can apply the strip, lower, and upper String methods appropriately
+2. Can identify the String data type
+3. Able to interactively test methods and inspect variables (using REPL in IDLE, IDE, online tool, etc.)
+4. Able to use the **in** keyword for both (1) string in a list and (2) character(s) in a string.
+5. Can create a list using variables (e.g. from user inputs)
+6. Can use a for to loop over elements of a list
+7. Understands the `range(...)` function and what it represents
+8. Knows the concept of the index variable in for i in range(...)
+9. Understands the Integer type
+10. Able to convert an Integer to a String
+11. Knows that concatenation is only applicable between 2 strings, not Int and String
+12. Is able to design and implement nested conditionals
+13. Understands the concept of robustness with respect to code
+14. Can identify whether an error is a syntax error or a semantic error
+15. Understands the concept of method chaining (applying to an object and sending output from one method to the method to its right, using the . operator)
+
+##  Week 4 Learning Outcomes 
+1. Can use the range function with arguments that are variables (not only numbers)
+2. Knows that a loop is a way to reduce duplication of code
+3. Able to use integers and floats and manipulate them in variables
+4. Knows how to initialize a variable of type Integer
+5. Can apply the accumulator pattern (including initialization) and += shortcut
+6. Able to get the length of a list
+7. Able to convert strings to integer type (esp. user input)
+8. Knows that division of integers converts type to float
+9. Able to perform arithmetic operations on numbers
+10. Can use the accumulator pattern with other arithmetic operators
+11. Can print floats to a given number of decimal places
+
+##  Week 5 Learning Outcomes 
+
+1. Able to open and read lines from a text file
+2. Able to split a string into a list
+3. Able to access a specific element(s) of a list using indexing/slicing
+4. Able to access a specific character(s) in a string using indexing/slicing
+5. Able to perform comparisons between numbers, taking into account order of operators (operator precedence)
+6. Able to perform comparisons (e.g. !=, &lt;,>) with strings
+7. Can interpret code with nested conditionals with comparison operators (e.g. !=, &lt;,>=) and numbers
+8. Able to find the common elements between 2 lists
+9. Able to understand and use a nested for loop
+10. Able to apply operator precedence to evaluate expressions
+11. Able to concatenate lists
+12. Able to apply accumulation pattern for strings and lists (previously was numbers)
+13. Able to calculate the maximum or minimum
+14. Able to coordinate between 2 or more lists using a common  index
+
 ##  Week 7 Learning outcomes 
 
 - know `len`, know that strings are immutable, use loops by index
@@ -21,6 +112,33 @@
 - Able to color the turtle using turtle color names
 - Able to color the turtle using color coded with RGB values as a 3-tuple with values for (red,green,blue)
 - Able to identify the scope of a variable, especially in relation to function scope
+
+```python
+# turtle methods
+import turtle
+pen = turtle.Turtle()
+pen.forward(10)
+pen.stamp()
+pen.right(180)
+pen.left(90)
+pen.penup()
+pen.pendown()
+pen.goto(10,-10)
+pen.color("blue")
+turtle.colormode(255)
+mycolor = (255,0,120)
+pen.color(mycolor)
+
+# defining a function
+def myfunction(a,b):
+    # do things with a and b
+    # possibly use `return` statement
+
+myfunction(45,20)
+
+for i in range(...):
+      myfunction(i*2,i)
+```
 
 ##  Week 9 Learning outcomes 
 
@@ -68,6 +186,19 @@ You should know:
   - How to read, show and save images using the 3Dlist representing an image as provided in the cmpt120images module 
   - How to extract and/or change the color as RGB and/or individual color components of a pixel using a 3DList representing an image as provided in the cmpt120images module
 
+```
+def my_func(a,b):
+  return a < b
+
+if  my_less_than(2,30):
+     ..............
+
+my_3d_list[0][10][4]
+
+import cmpt120images
+import my_custom_module
+```
+
 ##  Week 11 Learning outcomes 
 
 - Alias vs. copy, lists and functions, mutability of lists
@@ -86,12 +217,23 @@ You should know:
   - Able to write code that can reverse a string using recursion 
   - Able to write a recursive or iterative function to check if a string is a palindrome
 
+```
+mylist = [1,2,3]
+mylistalias = mylist
+mylist.append(4)
+# mylist and mylistalias now have 4 elements
+
+def changes_list(alist):
+  alist[0] = 1
+
+origlist = ["a","b","c"]
+changes_list(origlist)
+# origlist is now changed
+```
+
 ##  Week 12 Learning outcomes 
 
-- More recursion
-  - Able to write code that can produce the sum of a list using recursion
-  - Able to write code that can reverse a string using recursion 
-  - Able to write a recursive or iterative function to check if a string is a palindrome
+(Spend more time on recursion learning outcomes this week)
 
 - Search!
   - Able to write a linear search function with various return types (Boolean using for/while, index of unique found element, indices of all found elements)

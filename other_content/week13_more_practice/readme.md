@@ -197,14 +197,12 @@ Options:
 
 <details><summary>Correct answer</summary>a</details>
 
-
-Here’s a "green screen replacement" question using very basic Python:
-
 ---
 
 ### 7. **Green Screen Pixel Replacement**
 
-The following function replaces the green pixels in an image with pixels from a background image. It processes pixel-by-pixel using very basic Python (no modules) but has a missing line. Choose the correct snippet to replace `???`:
+The following function replaces the green pixels in an image with pixels from a background image. It processes pixel-by-pixel using very basic Python (no modules) but has a missing line. Note that this function constructs a new array to return
+in the function -- it does not modify the arguments. Choose the correct snippet to replace `???`:
 
 ```python
 def replace_green_screen(foreground, background):
@@ -221,7 +219,7 @@ def replace_green_screen(foreground, background):
     return result
 ```
 
-**Foreground and Background** are 2D lists of pixels (e.g., `pixel = (R, G, B)`), where each pixel is a tuple of three integers (red, green, blue) ranging from 0 to 255.
+**Foreground and Background** are 2D lists of pixels (e.g., `pixel = (R, G, B)`), where each pixel is a list of three integers (red, green, blue) ranging from 0 to 255.
 
 Options:
 - a) `row.append(background[i][j])`
@@ -293,6 +291,8 @@ Computer: Correct!
 
 <details>
 <summary> Example answer</summary>
+
+```python
 import random
 
 def guess_the_number():
@@ -309,6 +309,7 @@ def guess_the_number():
 
 # Example usage
 # guess_the_number()
+```
 
 </details>
 
@@ -329,6 +330,8 @@ remove_duplicates([1, 2, 2, 3, 4, 4, 5])
 
 <details>
 <summary> Example answer</summary>
+
+```python
 def remove_duplicates(lst):
     unique = []
     for item in lst:
@@ -338,6 +341,8 @@ def remove_duplicates(lst):
 
 # Example usage
 print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))  # Output: [1, 2, 3, 4, 5]
+```
+
 </details>
 
 ---
@@ -356,6 +361,8 @@ True
 ```
 
 <details>
+
+```python
 <summary> Example answer</summary>
 def is_prime(n):
     if n <= 1:
@@ -367,6 +374,8 @@ def is_prime(n):
 
 # Example usage
 print(is_prime(29))  # Output: True
+```
+
 </details>
 
 
@@ -386,6 +395,9 @@ count_vowels("hello world")
 ```
 
 <details>
+
+```python
+
 <summary> Example answer</summary>
 def count_vowels(s):
     vowels = "aeiouAEIOU"
@@ -397,6 +409,8 @@ def count_vowels(s):
 
 # Example usage
 print(count_vowels("hello world"))  # Output: 3
+
+```
 
 </details>
 
@@ -420,6 +434,10 @@ simple_histogram([3, 5, 1])
 ```
 
 <details>
+
+```python
+
+
 <summary> Example answer</summary>
 def simple_histogram(lst):
     for num in lst:
@@ -431,6 +449,9 @@ simple_histogram([3, 5, 1])
 # ***
 # *****
 # *
+
+```python
+
 </details>
 
 ---
@@ -449,6 +470,9 @@ reverse_integer(12345)
 ```
 
 <details>
+
+```python
+
 <summary> Example answer</summary>
 def reverse_integer(n):
     reversed_num = 0
@@ -459,6 +483,8 @@ def reverse_integer(n):
 
 # Example usage
 print(reverse_integer(12345))  # Output: 54321
+
+```python
 
 </details>
 
